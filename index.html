@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thu Mua Phế Liệu, Vật Tư Tồn Kho Giá Cao - Công Ty Đức Minh</title>
     <title>
-      Chuyên Thu Mua Vật Tư Tồn Kho, Cáp Điện Giá Cao - Công Ty Đức Minh
+      Chuyên Thu Mua Vật Tư Tồn Kho, Cáp Điện Giá Cao - Công Ty Thu Mua Phế Liệu
+      Đức Minh
     </title>
 
     <meta
@@ -17,8 +17,6 @@
       name="keywords"
       content="thu mua vật tư tồn kho, thu mua cáp điện, thanh lý vật tư, thu mua dây điện, cáp đồng cũ, cáp nhôm, dây DC solar, thang máng cáp, kẹp pin, thu mua thiết bị điện, công ty đức minh"
     />
-
-    <!-- <link rel="canonical" href="https://www.ten-mien-cua-ban.com/" /> -->
 
     <meta
       property="og:title"
@@ -32,7 +30,6 @@
       property="og:image"
       content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqOeI-kSGOgTe6J83uVr-N81W7OwuHsdzOl1ih_HV0OQlShm5_mImobogsh3AG6a8geDTEeSt2iC0Nd2yyvy_QtenIrPwhbIP2aegX58uRqAwCukH-kUWBZIPBhnW97c_wf5FWI12ryHBZ_ph5oOhayG146-6hb9PESPXZxeeIaVInsI6knLwtkigKKY8/s1200/CO%CC%82NG_TY_THU_MUA_PHE%CC%82%CC%81_LIE%CC%A3%CC%82U_%C4%90U%CC%9B%CC%81C_MINH.png"
     />
-    <!-- <meta property="og:url" content="https://www.ten-mien-cua-ban.com/" /> -->
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="vi_VN" />
     <meta property="og:site_name" content="Công Ty Đức Minh" />
@@ -194,13 +191,10 @@
       /* === HERO SLIDESHOW === */
       .hero {
         position: relative;
-        height: 85vh;
-        color: var(--text-light);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        height: 60vh;
         overflow: hidden;
+        /* THAY ĐỔI: Chuyển màu nền sang trắng */
+        background-color: #fff;
       }
       .slide {
         position: absolute;
@@ -208,15 +202,14 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
+        background-repeat: no-repeat;
         opacity: 0;
-        transform: scale(1);
-        transition: opacity 1.5s ease-in-out, transform 8s ease-out;
+        transition: opacity 1.5s ease-in-out;
       }
       .slide.active {
         opacity: 1;
-        transform: scale(1.05);
       }
       .hero-overlay {
         position: absolute;
@@ -224,26 +217,23 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.2)
-        );
+        background: rgba(0, 0, 0, 0.1);
       }
-      .hero-content {
-        position: relative;
-        z-index: 2;
-        padding: 0 20px;
+
+      .text-banner {
+        background: var(--bg-grey);
+        padding: 40px 0;
+        text-align: center;
       }
-      .hero h1 {
-        font-size: 3.5rem;
-        margin-bottom: 15px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        line-height: 1.2;
+      .text-banner h1 {
+        font-size: 2.8rem;
+        margin-bottom: 10px;
+        color: var(--primary-color);
       }
-      .hero p {
-        font-size: 1.3rem;
-        margin-bottom: 30px;
+      .text-banner p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        color: #555;
       }
       .btn {
         background: var(--secondary-color);
@@ -513,6 +503,12 @@
         .navbar .nav-links a {
           font-size: 0.75rem;
         }
+        .text-banner h1 {
+          font-size: 2.2rem;
+        }
+        .text-banner p {
+          font-size: 1rem;
+        }
       }
 
       @media (max-width: 768px) {
@@ -568,15 +564,15 @@
           font-size: 1rem;
         }
         .hero {
-          height: 70vh;
+          height: 40vh;
         }
-        .hero h1 {
-          font-size: 2.2rem;
+        .text-banner h1 {
+          font-size: 1.8rem;
           line-height: 1.3;
         }
-        .hero p {
-          font-size: 1.1rem;
-          margin-bottom: 25px;
+        .text-banner p {
+          font-size: 1rem;
+          margin-bottom: 20px;
         }
         .btn {
           padding: 12px 28px;
@@ -593,6 +589,9 @@
       @media (max-width: 480px) {
         .navbar .logo .logo-text {
           display: none;
+        }
+        .text-banner h1 {
+          font-size: 1.5rem;
         }
       }
     </style>
@@ -690,23 +689,26 @@
         <div
           class="slide active"
           style="
-            background-image: url('https://github.com/quang3215/Duc-Minh/blob/main/img/3.jpg?raw=true');
+            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0aGvq36zYbHUHeUpTXZPM2L1CpeWfLXdP9FNco59UDTQhfN9FNdnCylpyB9l7XxfB2-7TdHZYrjKJMA9VYGkzg3HdP_yuxyQIq9DB7oAAVDbx5VZKn5Wx3JDdN5y81YJA_Pj6mdcHZ730deJSLV9YdprO3Dn44URIDOq8mB6rckByuKZe7wiDB8DCd1g/s1920/6.png');
           "
         ></div>
         <div
           class="slide"
           style="
-            background-image: url('https://github.com/quang3215/Duc-Minh/blob/main/img/2.jpg?raw=true');
+            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJo-3YnfyBQnzsyGsp0GICbV9LDdYhu6RO8-3xNCLJGQc200bk6yvtTk7ZazVjIRpBQZd7PcReI7g279klKajyNBMVColZ_oJCUMFS0wVvJGTgA4Eb7ED7UaB4w_LbiO0qeG71fugYm377VQzQ1A8VmobsvoeDav_nyRMdBrhonJ25IFx0q665dmqMEY4/s1920/7.png');
           "
         ></div>
         <div
           class="slide"
           style="
-            background-image: url('https://github.com/quang3215/Duc-Minh/blob/main/img/phe-lieu-cong-trinh.jpg?raw=true');
+            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtgAHsevmMKRtEMlnbI8k3UQCVOGz_waz3pJdbj8p6BCxE0yda0s03rwVAmlXCA6LvUK7UC-7X-kze22-t-uEJGjsWm96Gqi-2-qM2qzaJenQ01eU9cUp624f9Rpcm24PU3kIM-YaGmdRjQF8ywjcDNWjlh5hpp9OIGhmvdGa0hpdYio5hz8kY20E1wIk/s1920/8.png');
           "
         ></div>
         <div class="hero-overlay"></div>
-        <div class="hero-content">
+      </section>
+
+      <section class="text-banner">
+        <div class="container">
           <h1>THU MUA VẬT TƯ TỒN KHO - PHẾ LIỆU GIÁ CAO</h1>
           <p>Uy Tín - Chuyên Nghiệp - Nhanh Chóng - Tận Nơi</p>
           <a href="tel:0936350118" class="btn">Gọi ngay 0936.350.118</a>
