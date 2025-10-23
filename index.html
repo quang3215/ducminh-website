@@ -67,7 +67,7 @@
         max-width: 100%;
         height: auto;
         display: block;
-        border-radius: 8px; /* Thêm bo góc cho hình ảnh */
+        border-radius: 8px;
       }
 
       a {
@@ -85,7 +85,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap; /* Cho phép xuống dòng trên mobile */
+        flex-wrap: wrap;
       }
       .top-bar a {
         color: var(--text-light);
@@ -105,13 +105,28 @@
         align-items: center;
         height: 80px;
       }
-
+      .navbar .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .navbar .logo .logo-icon {
+        height: 139px;
+        width: auto;
+      }
+      .navbar .logo .logo-text {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        line-height: 1;
+        text-transform: uppercase;
+      }
       .navbar .nav-links {
         list-style: none;
         display: flex;
       }
       .navbar .nav-links li {
-        margin-left: 15px;
+        margin-left: 25px;
       }
       .navbar .nav-links a {
         color: var(--text-dark);
@@ -120,7 +135,7 @@
         padding: 5px 0;
         border-bottom: 2px solid transparent;
         transition: all 0.3s ease;
-        font-size: 0.85rem;
+        font-size: 1rem;
         white-space: nowrap;
       }
       .navbar .nav-links a:hover,
@@ -139,46 +154,6 @@
         margin: 6px 0;
       }
 
-      /* === CSS MỚI CHO LOGO & TÊN CÔNG TY === */
-
-      .navbar .logo {
-        display: flex; /* Dùng Flexbox để xếp các item trên một hàng */
-        align-items: center; /* Căn giữa các item theo chiều dọc */
-        gap: 12px; /* Tạo khoảng cách giữa logo và chữ */
-
-        /* Xoá các thuộc tính cũ nếu có để tránh xung đột */
-        font-size: initial;
-        font-weight: initial;
-      }
-
-      .navbar .logo .logo-icon {
-        height: 139px; /* Điều chỉnh chiều cao của logo nếu cần */
-        width: auto;
-      }
-
-      .navbar .logo .logo-text {
-        font-size: 1.8rem; /* Lấy lại style chữ cũ */
-        font-weight: 700;
-        color: var(--primary-color);
-        line-height: 1; /* Đảm bảo chữ không quá cao */
-      }
-
-      /* === RESPONSIVE CHO LOGO TRÊN DI ĐỘNG === */
-      @media (max-width: 768px) {
-        .navbar .logo .logo-icon {
-          height: 100px; /* Cho logo nhỏ lại một chút */
-        }
-        .navbar .logo .logo-text {
-          font-size: 1.3rem; /* Cho chữ nhỏ lại một chút */
-        }
-      }
-
-      /* Tùy chọn: Ẩn chữ trên màn hình rất nhỏ để tiết kiệm không gian */
-      @media (max-width: 480px) {
-        .navbar .logo .logo-text {
-          display: none;
-        }
-      }
       /* === HERO SLIDESHOW === */
       .hero {
         position: relative;
@@ -329,39 +304,9 @@
         text-align: center;
       }
 
-      /* === PROCESS SECTION === */
-      .process-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-        text-align: center;
-      }
-      .process-item {
-        position: relative;
-        padding: 20px;
-      }
-      .process-item .step-number {
-        width: 60px;
-        height: 60px;
-        background: var(--primary-color);
-        color: var(--text-light);
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.8rem;
-        font-weight: bold;
-        margin: 0 auto 20px;
-        border: 4px solid var(--bg-grey);
-      }
-      .process-item h3 {
-        margin-bottom: 10px;
-        color: var(--primary-color);
-      }
-
       /* === BẢNG GIÁ === */
       .price-table-wrapper {
-        overflow-x: auto; /* Giúp bảng cuộn ngang trên mobile nếu quá rộng */
+        overflow-x: auto;
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
         border-radius: 8px;
         border: 1px solid var(--border-color);
@@ -401,6 +346,36 @@
         font-weight: 700;
         color: var(--primary-color);
         font-size: 1.1rem;
+      }
+
+      /* === PROCESS SECTION === */
+      .process-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        text-align: center;
+      }
+      .process-item {
+        position: relative;
+        padding: 20px;
+      }
+      .process-item .step-number {
+        width: 60px;
+        height: 60px;
+        background: var(--primary-color);
+        color: var(--text-light);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin: 0 auto 20px;
+        border: 4px solid var(--bg-grey);
+      }
+      .process-item h3 {
+        margin-bottom: 10px;
+        color: var(--primary-color);
       }
 
       /* === FOOTER === */
@@ -492,6 +467,9 @@
 
       /* === RESPONSIVE DESIGN === */
       @media (max-width: 992px) {
+        .navbar .logo .logo-text {
+          font-size: 1.5rem;
+        }
         .navbar .nav-links li {
           margin-left: 10px;
         }
@@ -517,6 +495,12 @@
         }
         .navbar .container {
           position: relative;
+        }
+        .navbar .logo .logo-icon {
+          height: 100px;
+        }
+        .navbar .logo .logo-text {
+          font-size: 1.3rem;
         }
         .menu-icon {
           display: block;
@@ -565,8 +549,13 @@
           grid-template-columns: 1fr;
         }
         .about-grid .about-image {
-          order: -1; /* Đưa hình lên trước trên mobile */
+          order: -1;
           margin-bottom: 30px;
+        }
+      }
+      @media (max-width: 480px) {
+        .navbar .logo .logo-text {
+          display: none;
         }
       }
     </style>
@@ -824,7 +813,7 @@
         </div>
       </section>
 
-      <section id="price-list">
+      <section id="price-list" style="background: var(--bg-grey)">
         <div class="container">
           <h2 class="section-title">BẢNG GIÁ THU MUA HÔM NAY</h2>
           <p class="section-subtitle">
@@ -885,7 +874,7 @@
           </div>
         </div>
       </section>
-      <section id="process" style="background: var(--bg-grey)">
+      <section id="process">
         <div class="container">
           <h2 class="section-title">QUY TRÌNH THU MUA CHUYÊN NGHIỆP</h2>
           <div class="process-grid">

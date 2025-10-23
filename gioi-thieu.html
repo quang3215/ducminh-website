@@ -89,10 +89,45 @@
         align-items: center;
         height: 80px;
       }
+      /* === CSS MỚI CHO LOGO & TÊN CÔNG TY === */
+
       .navbar .logo {
-        font-size: 1.8rem;
+        display: flex; /* Dùng Flexbox để xếp các item trên một hàng */
+        align-items: center; /* Căn giữa các item theo chiều dọc */
+        gap: 12px; /* Tạo khoảng cách giữa logo và chữ */
+
+        /* Xoá các thuộc tính cũ nếu có để tránh xung đột */
+        font-size: initial;
+        font-weight: initial;
+      }
+
+      .navbar .logo .logo-icon {
+        height: 139px; /* Điều chỉnh chiều cao của logo nếu cần */
+        width: auto;
+      }
+
+      .navbar .logo .logo-text {
+        font-size: 1.8rem; /* Lấy lại style chữ cũ */
         font-weight: 700;
         color: var(--primary-color);
+        line-height: 1; /* Đảm bảo chữ không quá cao */
+      }
+
+      /* === RESPONSIVE CHO LOGO TRÊN DI ĐỘNG === */
+      @media (max-width: 768px) {
+        .navbar .logo .logo-icon {
+          height: 100px; /* Cho logo nhỏ lại một chút */
+        }
+        .navbar .logo .logo-text {
+          font-size: 1.3rem; /* Cho chữ nhỏ lại một chút */
+        }
+      }
+
+      /* Tùy chọn: Ẩn chữ trên màn hình rất nhỏ để tiết kiệm không gian */
+      @media (max-width: 480px) {
+        .navbar .logo .logo-text {
+          display: none;
+        }
       }
       .navbar .nav-links {
         list-style: none;
@@ -386,7 +421,14 @@
 
     <header class="navbar">
       <div class="container">
-        <a href="index.html" class="logo">CÔNG TY ĐỨC MINH</a>
+        <a href="index.html" class="logo">
+          <img
+            src="https://github.com/quang3215/Duc-Minh/blob/main/img/logomd.png?raw=true"
+            alt="Logo Công Ty Đức Minh"
+            class="logo-icon"
+          />
+          <span class="logo-text">CÔNG TY ĐỨC MINH</span>
+        </a>
         <nav>
           <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Trang Chủ</a></li>
