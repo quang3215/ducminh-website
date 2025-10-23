@@ -105,11 +105,7 @@
         align-items: center;
         height: 80px;
       }
-      .navbar .logo {
-        font-size: 1.8rem;
-        font-weight: 700;
-        color: var(--primary-color);
-      }
+
       .navbar .nav-links {
         list-style: none;
         display: flex;
@@ -143,6 +139,46 @@
         margin: 6px 0;
       }
 
+      /* === CSS MỚI CHO LOGO & TÊN CÔNG TY === */
+
+      .navbar .logo {
+        display: flex; /* Dùng Flexbox để xếp các item trên một hàng */
+        align-items: center; /* Căn giữa các item theo chiều dọc */
+        gap: 12px; /* Tạo khoảng cách giữa logo và chữ */
+
+        /* Xoá các thuộc tính cũ nếu có để tránh xung đột */
+        font-size: initial;
+        font-weight: initial;
+      }
+
+      .navbar .logo .logo-icon {
+        height: 139px; /* Điều chỉnh chiều cao của logo nếu cần */
+        width: auto;
+      }
+
+      .navbar .logo .logo-text {
+        font-size: 1.8rem; /* Lấy lại style chữ cũ */
+        font-weight: 700;
+        color: var(--primary-color);
+        line-height: 1; /* Đảm bảo chữ không quá cao */
+      }
+
+      /* === RESPONSIVE CHO LOGO TRÊN DI ĐỘNG === */
+      @media (max-width: 768px) {
+        .navbar .logo .logo-icon {
+          height: 100px; /* Cho logo nhỏ lại một chút */
+        }
+        .navbar .logo .logo-text {
+          font-size: 1.3rem; /* Cho chữ nhỏ lại một chút */
+        }
+      }
+
+      /* Tùy chọn: Ẩn chữ trên màn hình rất nhỏ để tiết kiệm không gian */
+      @media (max-width: 480px) {
+        .navbar .logo .logo-text {
+          display: none;
+        }
+      }
       /* === HERO SLIDESHOW === */
       .hero {
         position: relative;
@@ -321,6 +357,50 @@
       .process-item h3 {
         margin-bottom: 10px;
         color: var(--primary-color);
+      }
+
+      /* === BẢNG GIÁ === */
+      .price-table-wrapper {
+        overflow-x: auto; /* Giúp bảng cuộn ngang trên mobile nếu quá rộng */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+      }
+      .price-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+      }
+      .price-table th,
+      .price-table td {
+        padding: 16px 20px;
+        border-bottom: 1px solid var(--border-color);
+      }
+      .price-table thead tr {
+        background-color: var(--primary-color);
+        color: var(--text-light);
+      }
+      .price-table th {
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+      }
+      .price-table tbody tr {
+        background-color: var(--bg-light);
+      }
+      .price-table tbody tr:nth-child(even) {
+        background-color: var(--bg-grey);
+      }
+      .price-table tbody tr:last-child td {
+        border-bottom: none;
+      }
+      .price-table tbody tr:hover {
+        background-color: #e9e9e9;
+      }
+      .price-table .price {
+        font-weight: 700;
+        color: var(--primary-color);
+        font-size: 1.1rem;
       }
 
       /* === FOOTER === */
@@ -553,7 +633,14 @@
 
     <header class="navbar">
       <div class="container">
-        <a href="index.html" class="logo">CÔNG TY ĐỨC MINH</a>
+        <a href="index.html" class="logo">
+          <img
+            src="https://github.com/quang3215/Duc-Minh/blob/main/img/logomd.png?raw=true"
+            alt="Logo Công Ty Đức Minh"
+            class="logo-icon"
+          />
+          <span class="logo-text">CÔNG TY ĐỨC MINH</span>
+        </a>
         <nav>
           <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Trang Chủ</a></li>
@@ -737,6 +824,67 @@
         </div>
       </section>
 
+      <section id="price-list">
+        <div class="container">
+          <h2 class="section-title">BẢNG GIÁ THU MUA HÔM NAY</h2>
+          <p class="section-subtitle">
+            Giá có thể thay đổi, vui lòng gọi hotline để có giá chính xác nhất
+          </p>
+
+          <div class="price-table-wrapper">
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>Tên Phế Liệu</th>
+                  <th>Đơn Giá (VNĐ/Kg)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Phế liệu Sắt đặc</td>
+                  <td class="price">12.000 - 20.000</td>
+                </tr>
+                <tr>
+                  <td>Phế liệu Sắt vụn</td>
+                  <td class="price">10.000 - 15.000</td>
+                </tr>
+                <tr>
+                  <td>Phế liệu Đồng cáp</td>
+                  <td class="price">180.000 - 250.000</td>
+                </tr>
+                <tr>
+                  <td>Phế liệu Đồng đỏ</td>
+                  <td class="price">150.000 - 210.000</td>
+                </tr>
+                <tr>
+                  <td>Phế liệu Nhôm loại 1</td>
+                  <td class="price">55.000 - 75.000</td>
+                </tr>
+                <tr>
+                  <td>Phế liệu Nhôm loại 2</td>
+                  <td class="price">40.000 - 60.000</td>
+                </tr>
+                <tr>
+                  <td>Phế liệu Inox 304</td>
+                  <td class="price">45.000 - 65.000</td>
+                </tr>
+                <tr>
+                  <td>Phế liệu Inox 201</td>
+                  <td class="price">20.000 - 35.000</td>
+                </tr>
+                <tr>
+                  <td>Phế liệu Giấy Carton</td>
+                  <td class="price">3.500 - 7.000</td>
+                </tr>
+                <tr>
+                  <td>Phế liệu Nhựa</td>
+                  <td class="price">Liên Hệ Hotline</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
       <section id="process" style="background: var(--bg-grey)">
         <div class="container">
           <h2 class="section-title">QUY TRÌNH THU MUA CHUYÊN NGHIỆP</h2>
