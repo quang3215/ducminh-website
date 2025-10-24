@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thu Mua Phế Liệu, Vật Tư Tồn Kho Giá Cao - Công Ty Đức Minh</title>
     <title>
-      Chuyên Thu Mua Vật Tư Tồn Kho, Cáp Điện Giá Cao - Công Ty Đức Minh
+      Chuyên Thu Mua Vật Tư Tồn Kho, Cáp Điện Giá Cao - Công Ty Thu Mua Phế Liệu
+      Đức Minh
     </title>
 
     <meta
@@ -36,7 +36,7 @@
 
     <link
       rel="icon"
-      href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_J-j8VpVPvYfGZ7i3PTQHCIIo637xU1vcsuvB2cZS9DY0viwrhlFmpFsw0L-J3M7-qKL_DDdRnH-7xQLEiVMYeFBVSvfWWQVkS7G6cfHkvPm5RFE2w1JUUkZRMv1ZSeuWFo38IRxGlqdoz5uBc4Rno82WgEmAyB7Q11lavEbbED2Xq86yo-aO51Z0Ucs/s515/logomd.png"
+      href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVff_TlxuVkSoLj9kLRQBE9jVq5oravneFAT-a4VbSE5b_MqPf2cGwn4kf0YCYOTBPMYMDVpKDoWgzqMU6ebhhRTTEhpcgthnSr7HtFTboReEY0i0KUNtSEY7MuREXrTbAO0JCpDTQPl-2t-bIMeGDhN3CoBiMFTPGkHiTaujUECUW2_sS1n2000gsxI8/s16000/logo2.png"
       type="image/x-icon"
     />
     <style>
@@ -139,28 +139,13 @@
         align-items: center;
         height: 80px;
       }
-      .navbar .logo {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
-      .navbar .logo .logo-icon {
-        height: 139px;
-        width: auto;
-      }
-      .navbar .logo .logo-text {
-        font-size: 1.8rem;
-        font-weight: 700;
-        color: var(--primary-color);
-        line-height: 1;
-        text-transform: uppercase;
-      }
+
       .navbar .nav-links {
         list-style: none;
         display: flex;
       }
       .navbar .nav-links li {
-        margin-left: 25px;
+        margin-left: 15px;
       }
       .navbar .nav-links a {
         color: var(--text-dark);
@@ -169,13 +154,53 @@
         padding: 5px 0;
         border-bottom: 2px solid transparent;
         transition: all 0.3s ease;
-        font-size: 1rem;
+        font-size: 0.85rem;
         white-space: nowrap;
       }
       .navbar .nav-links a:hover,
       .navbar .nav-links a.active {
         color: var(--primary-color);
         border-bottom-color: var(--primary-color);
+      }
+      /* === CSS MỚI CHO LOGO & TÊN CÔNG TY === */
+
+      .navbar .logo {
+        display: flex; /* Dùng Flexbox để xếp các item trên một hàng */
+        align-items: center; /* Căn giữa các item theo chiều dọc */
+        gap: 12px; /* Tạo khoảng cách giữa logo và chữ */
+
+        /* Xoá các thuộc tính cũ nếu có để tránh xung đột */
+        font-size: initial;
+        font-weight: initial;
+      }
+
+      .navbar .logo .logo-icon {
+        height: 80px; /* Điều chỉnh chiều cao của logo nếu cần */
+        width: auto;
+      }
+
+      .navbar .logo .logo-text {
+        font-size: 1.8rem; /* Lấy lại style chữ cũ */
+        font-weight: 700;
+        color: var(--primary-color);
+        line-height: 1; /* Đảm bảo chữ không quá cao */
+      }
+
+      /* === RESPONSIVE CHO LOGO TRÊN DI ĐỘNG === */
+      @media (max-width: 768px) {
+        .navbar .logo .logo-icon {
+          height: 65px; /* Cho logo nhỏ lại một chút */
+        }
+        .navbar .logo .logo-text {
+          font-size: 1.3rem; /* Cho chữ nhỏ lại một chút */
+        }
+      }
+
+      /* Tùy chọn: Ẩn chữ trên màn hình rất nhỏ để tiết kiệm không gian */
+      @media (max-width: 480px) {
+        .navbar .logo .logo-text {
+          display: none;
+        }
       }
       .menu-icon {
         display: none;
@@ -530,7 +555,7 @@
           position: relative;
         }
         .navbar .logo .logo-icon {
-          height: 100px;
+          height: 65px;
         }
         .navbar .logo .logo-text {
           font-size: 1.3rem;
@@ -660,7 +685,7 @@
       <div class="container">
         <a href="index.html" class="logo">
           <img
-            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_J-j8VpVPvYfGZ7i3PTQHCIIo637xU1vcsuvB2cZS9DY0viwrhlFmpFsw0L-J3M7-qKL_DDdRnH-7xQLEiVMYeFBVSvfWWQVkS7G6cfHkvPm5RFE2w1JUUkZRMv1ZSeuWFo38IRxGlqdoz5uBc4Rno82WgEmAyB7Q11lavEbbED2Xq86yo-aO51Z0Ucs/s515/logomd.png"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVff_TlxuVkSoLj9kLRQBE9jVq5oravneFAT-a4VbSE5b_MqPf2cGwn4kf0YCYOTBPMYMDVpKDoWgzqMU6ebhhRTTEhpcgthnSr7HtFTboReEY0i0KUNtSEY7MuREXrTbAO0JCpDTQPl-2t-bIMeGDhN3CoBiMFTPGkHiTaujUECUW2_sS1n2000gsxI8/s16000/logo2.png"
             alt="Logo Công Ty Đức Minh"
             class="logo-icon"
           />
@@ -709,7 +734,7 @@
 
       <section class="text-banner">
         <div class="container">
-          <h1>THU MUA VẬT TƯ TỒN KHO - PHẾ LIỆU GIÁ CAO</h1>
+          <h1>THU MUA VẬT TƯ TỒN KHO - PHẾ LIỆU ĐỒNG GIÁ CAO</h1>
           <p>Uy Tín - Chuyên Nghiệp - Nhanh Chóng - Tận Nơi</p>
           <a href="tel:0936350118" class="btn">Gọi ngay 0936.350.118</a>
         </div>
@@ -719,7 +744,7 @@
         <div class="container about-grid">
           <div class="about-image">
             <img
-              src="https://github.com/quang3215/Duc-Minh/blob/main/img/z7144907590493_88e971a97f72309a344918b985a54251.jpg?raw=true"
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0I2UD9dYwpJ4pYnse8BMfgK8jYdaEnVVy5Lp0bSA0Hls1pA_zKMNE5lYfcMpgg4b3ctEPrzMu6TomQReRJSAEueX71xF-rBVn4SH_IWngLTUvwHBMhRCtnoT7B0kwA4z2YugEeM_XOsKHOY7ccEFSs2_4YcYk9LAVAzrw0L0bGhZPddOB_s-nDKylcJs/s16000/500x300%202.png"
               alt="Giới thiệu công ty Đức Minh"
             />
           </div>
@@ -744,6 +769,7 @@
               <li>Đội ngũ bốc xếp, vận chuyển chuyên nghiệp.</li>
               <li>Cân đo chính xác, minh bạch.</li>
               <li>Thanh toán một lần ngay tại chỗ.</li>
+              <li>Hoa hồng cao cho người giới thiệu.</li>
             </ul>
           </div>
         </div>
@@ -794,39 +820,101 @@
 
       <section id="categories">
         <div class="container">
-          <h2 class="section-title">DANH MỤC THU MUA CHÍNH</h2>
+          <h2 class="section-title">THU MUA VẬT TƯ NĂNG LƯỢNG MẶT TRỜI</h2>
           <div class="machines-grid">
             <div class="machine-item">
               <img
-                src="https://github.com/quang3215/Duc-Minh/blob/main/img/z7144907590493_88e971a97f72309a344918b985a54251.jpg?raw=true"
-                alt="Cáp Điện & Dây Điện"
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4QgvIAdU37dvgPVErUskvsxWk1IrZLxQdb1mzal0KvJO77u9GmMsY349mogX-OrJTqKKoC-xojtcGjowAlhANxtAkTbAAUYv27q7deaAdkF3yG6mrbM52AWYnjvMYDxIUXE3XhhaVSmmPoQXt2t3zobhPaai6wiqtObDBFw3FtxDU4YQDBLqhUIGqajU/s16000/14.png"
+                alt="Thu mua pin năng lượng mặt trời"
               />
               <div class="caption">
-                <span>Cáp Điện & Dây Điện</span>
+                <span>Pin Năng Lượng Mặt Trời</span>
               </div>
             </div>
             <div class="machine-item">
               <img
-                src="https://github.com/quang3215/Duc-Minh/blob/main/img/z7144907590493_88e971a97f72309a344918b985a54251.jpg?raw=true"
-                alt="Thiết Bị Điện & Tủ Điện"
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGF3-dRDY88qQ8YB1J5642sYR4uEcknji-Sdy0zyyysl025KScAMJZoxOcveFxFYoEZxbVwdpTuzXODWIkRFln3NGxBqLDOZtoWsuA38JTknN4m59sTEjV-MffdRHnozV_-5w1ZNILYy1qVoqTUbKcX3voHJrbwMGKuodZcCrrk1G14yi5S8gbLto4VWQ/s16000/19.png"
+                alt="Thu mua Inverter, biến tần"
               />
               <div class="caption">
-                <span>Thiết Bị Điện & Tủ Điện</span>
+                <span>Inverter (Biến Tần)</span>
               </div>
             </div>
             <div class="machine-item">
               <img
-                src="https://github.com/quang3215/Duc-Minh/blob/main/img/z7144907590493_88e971a97f72309a344918b985a54251.jpg?raw=true"
-                alt="Phế Liệu Công Trình"
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsQ3BUIV8XFXlRqPUyD6eV7c6Nng0S2jZ6nSFOJ92svHKDuZOuBa053ZaDR7arQDR_L9SIft7jcMsOhEeIWMNn6jO1i0aZRhWqueX3fuj9cbCTgHxV7fCla1Cg0cdyaIdzhm-Hvj5dMDZg4EyPF_i3xntaOvqumBzy2HdIdB7X6prQkyyMROWdcg80Ffs/s16000/22.png"
+                alt="Thu mua dây điện DC Solar"
               />
               <div class="caption">
-                <span>Phế Liệu Công Trình (Sắt, Đồng, Nhôm)</span>
+                <span>Dây Điện DC Solar</span>
               </div>
             </div>
             <div class="machine-item">
               <img
-                src="https://github.com/quang3215/Duc-Minh/blob/main/img/z7144907590493_88e971a97f72309a344918b985a54251.jpg?raw=true"
-                alt="Máy Móc Công Nghiệp Cũ"
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid3Gh8HF62WYT2tdutVxZYL4GULfs5YL-VmpSGMdFSTE3pE910cEkKPSwvfJZyM-84j9esjdR94s5NXZ6FWBm5CUgSEtK-0VxEE3_NZ804ICcTXStwg1b5UTEduvTW8UW0DKo4FDM2pSO_oHOAAgidQ2bkUpx47IZ0b6gMHiZSLmMQ-jdiyUBa2klGEbI/s16000/28.png"
+                alt="Thu mua tủ điện, phụ kiện solar"
+              />
+              <div class="caption">
+                <span>Tủ Điện & Phụ Kiện</span>
+              </div>
+            </div>
+            <div class="machine-item">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhszh7H62wghjHhyphenhyphenKhL5BisJ_LGKxSfHJDFCOFa6h01chPAOZkM5TI249HZ_tgIVH8rK-ppxcXnYKiVjuik-ZeaaSuNJEfg1kiZ3jXtyWnMoxWE0v7sFGXQfcRL1R8Ds_Juu4S2aTiI9zIy1vwG3_wQGFO1pdVpkq_o-DpKT8flMKy7toPVNtCGaxX9aa0/s16000/26.png"
+                alt="Thu mua khung giàn, kẹp pin"
+              />
+              <div class="caption">
+                <span>Khung Giàn, Kẹp Pin</span>
+              </div>
+            </div>
+            <div class="machine-item">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipy0j5XO0LD50CUpLgkDXlZtCajcIhe43y181f5RcNx2RFy2TY7ZTDmXup6ntSt9Dw1tGDFgg7uQ9LMZn5cZBBT1wdL9JN5ykE1GgXQk5ie6NPFeqc-vn_44LmLSCIf4T6YWFQNSaSGXxrGrU25F9Q0_YT7gKqhTeIAwtXdH6wwn_v2QUCJB9bFSz0B_w/s16000/25.png"
+                alt="Thu mua vật tư điện mặt trời khác"
+              />
+              <div class="caption">
+                <span>Các Vật Tư Tồn Kho Khác</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="other-scrap" style="background: var(--bg-grey)">
+        <div class="container">
+          <h2 class="section-title">THU MUA CÁP ĐỒNG & THIẾT BỊ ĐIỆN</h2>
+          <div class="machines-grid">
+            <div class="machine-item">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7lY0Ni1ggt_VLJca_RXMHF0hFGw24N25hRGd_Vy_g1ZBXUS3mVRbG3DbkcLavEFKWcF9jyEfeeYJK6QDU_nDBrUq0UF2C3DafSDNAYupMuP-W5dOfVRIaamHjKi7HlTTQbMRCxIoC9ufAWcf4Nec11jyiHnD0TF2x7P0dgB3XQRteB_eLQ7fmtz4Qn3o/s16000/9.png"
+                alt="Thu mua cáp đồng, cáp nhôm"
+              />
+              <div class="caption">
+                <span>Cáp Đồng, Cáp Nhôm</span>
+              </div>
+            </div>
+            <div class="machine-item">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtoCL2P8HaEOkeuXXyYNokbjGKk_oD-DsqmVmbt5snV-KlQq33Ths3reud2DuzqpDqfEE6jQbl7j4vIS9uwWdgEH3RpDOFBQnhd6qpglPKKi55-bvur_9t8d2zM8cyHAmNJWvLn9MwwQEi6_Ue-9HaHDhIJKcmK_yHh6oZGcK7e0kMLgARN4_yoXZxue4/s16000/nlmt.png"
+                alt="Thu mua mô tơ, thiết bị điện 3 pha"
+              />
+              <div class="caption">
+                <span>Mô Tơ & Thiết Bị 3 Pha</span>
+              </div>
+            </div>
+            <div class="machine-item">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAHL3mWJxqSLuDrKV8kH1eRfKLee3MjAS8SNDYc0w_-rwZtLec4hz52USy-wqpzd-m9p6u9U1OBCItnhlyo6NzKVjKb_PkDElSZjHVMX40rrmr6dXbeGDmHMd6v15SawyLWimv531Neq_xdtMR7GsEiBauaV5Ub2cTjMvT2qB6Xz-mMg5ylaG-0N5zRqM/s16000/11.png"
+                alt="Thu mua tủ điện, CB, Aptomat"
+              />
+              <div class="caption">
+                <span>Tủ Điện, CB, Aptomat</span>
+              </div>
+            </div>
+            <div class="machine-item">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOpRsoGutaRvMqdkyzi0ghEjUCilO1gp0K7VgdTx3sgnRnjBnjOcBYtBstwLI7MwsTxV62E42sZxe1kiraFEpbrWK1z-YYlh-vOlbfuxvH5y10-Z5hD-uqTlU5koZo13Z8zAOuUyaSieZK5pGq4QDVbXXiza4_NidMILk4FYzy7hIHTG8sHifTxvmQyY4/s16000/12.png"
+                alt="Thanh lý máy móc công nghiệp"
               />
               <div class="caption">
                 <span>Máy Móc Công Nghiệp Cũ</span>
@@ -834,17 +922,17 @@
             </div>
             <div class="machine-item">
               <img
-                src="https://github.com/quang3215/Duc-Minh/blob/main/img/z7144907590493_88e971a97f72309a344918b985a54251.jpg?raw=true"
-                alt="Vật tư, thiết bị tồn kho khác"
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_PnoL69Wx98qPQrZ2h9TQVAjYZgsg3U6Jcms-W33QCliurGSEgrngmvYajWco3DOwd5Cq5PElVUpxVJDak79KYw0XoLXjd32m73A3GjLSyfw24HEpSDRu5MwdRvRTdqVamtxsjoo58AoseTUN3co13z1lJ_c8gEHEvS3Q3yPvKL2WVolsf_747meco6o/s16000/8.png"
+                alt="Thu mua linh kiện điện tử"
               />
               <div class="caption">
-                <span>Vật Tư & Thiết Bị Tồn Kho</span>
+                <span>Linh Kiện Điện Tử</span>
               </div>
             </div>
             <div class="machine-item">
               <img
-                src="https://github.com/quang3215/Duc-Minh/blob/main/img/z7144907590493_88e971a97f72309a344918b985a54251.jpg?raw=true"
-                alt="Thanh Lý Nhà Xưởng"
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhl_W589RbOc-vf01YIq64_6mWkmTwfTOaebCveAf3ng4FcEwVvgmPptIoReRAi7v5w7WF1QmfeoTUherrWVL-0LsJnIgJQy7hd2X_LpRS_5Fqp1wtzepW7FyY_mHoOy-5X3IWDp5YzYNISHHfx4RCSlZyrWMzu0klD34Uw41jeWY41ZphCtgnXX20jO0s/s16000/Thie%CC%82%CC%81t_ke%CC%82%CC%81_chu%CC%9Ba_co%CC%81_te%CC%82n%20(2).png"
+                alt="Thanh lý nhà xưởng, công trình"
               />
               <div class="caption">
                 <span>Thanh Lý Nhà Xưởng</span>
@@ -854,6 +942,69 @@
         </div>
       </section>
 
+      <section id="metal-scrap">
+        <div class="container">
+          <h2 class="section-title">
+            THU MUA PHẾ LIỆU ĐỒNG SẮT THÉP NHÔM INOX
+          </h2>
+          <div class="machines-grid">
+            <div class="machine-item">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4QgvIAdU37dvgPVErUskvsxWk1IrZLxQdb1mzal0KvJO77u9GmMsY349mogX-OrJTqKKoC-xojtcGjowAlhANxtAkTbAAUYv27q7deaAdkF3yG6mrbM52AWYnjvMYDxIUXE3XhhaVSmmPoQXt2t3zobhPaai6wiqtObDBFw3FtxDU4YQDBLqhUIGqajU/s16000/14.png"
+                alt="Thu Mua Phế Liệu Đồng"
+              />
+              <div class="caption">
+                <span>Phế Liệu Đồng (Cáp, Đỏ, Vàng)</span>
+              </div>
+            </div>
+            <div class="machine-item">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGF3-dRDY88qQ8YB1J5642sYR4uEcknji-Sdy0zyyysl025KScAMJZoxOcveFxFYoEZxbVwdpTuzXODWIkRFln3NGxBqLDOZtoWsuA38JTknN4m59sTEjV-MffdRHnozV_-5w1ZNILYy1qVoqTUbKcX3voHJrbwMGKuodZcCrrk1G14yi5S8gbLto4VWQ/s16000/19.png"
+                alt="Thu Mua Phế Liệu Sắt Thép"
+              />
+              <div class="caption">
+                <span>Phế Liệu Sắt Thép Công Trình</span>
+              </div>
+            </div>
+            <div class="machine-item">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsQ3BUIV8XFXlRqPUyD6eV7c6Nng0S2jZ6nSFOJ92svHKDuZOuBa053ZaDR7arQDR_L9SIft7jcMsOhEeIWMNn6jO1i0aZRhWqueX3fuj9cbCTgHxV7fCla1Cg0cdyaIdzhm-Hvj5dMDZg4EyPF_i3xntaOvqumBzy2HdIdB7X6prQkyyMROWdcg80Ffs/s16000/22.png"
+                alt="Thu Mua Phế Liệu Nhôm"
+              />
+              <div class="caption">
+                <span>Phế Liệu Nhôm (Đặc, Dẻo, Hợp Kim)</span>
+              </div>
+            </div>
+            <div class="machine-item">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid3Gh8HF62WYT2tdutVxZYL4GULfs5YL-VmpSGMdFSTE3pE910cEkKPSwvfJZyM-84j9esjdR94s5NXZ6FWBm5CUgSEtK-0VxEE3_NZ804ICcTXStwg1b5UTEduvTW8UW0DKo4FDM2pSO_oHOAAgidQ2bkUpx47IZ0b6gMHiZSLmMQ-jdiyUBa2klGEbI/s16000/28.png"
+                alt="Thu Mua Phế Liệu Inox"
+              />
+              <div class="caption">
+                <span>Phế Liệu Inox (304, 201, 430)</span>
+              </div>
+            </div>
+            <div class="machine-item">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhszh7H62wghjHhyphenhyphenKhL5BisJ_LGKxSfHJDFCOFa6h01chPAOZkM5TI249HZ_tgIVH8rK-ppxcXnYKiVjuik-ZeaaSuNJEfg1kiZ3jXtyWnMoxWE0v7sFGXQfcRL1R8Ds_Juu4S2aTiI9zIy1vwG3_wQGFO1pdVpkq_o-DpKT8flMKy7toPVNtCGaxX9aa0/s16000/26.png"
+                alt="Thu Mua Hợp Kim, Gang, Thiếc"
+              />
+              <div class="caption">
+                <span>Hợp Kim, Gang, Thiếc</span>
+              </div>
+            </div>
+            <div class="machine-item">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipy0j5XO0LD50CUpLgkDXlZtCajcIhe43y181f5RcNx2RFy2TY7ZTDmXup6ntSt9Dw1tGDFgg7uQ9LMZn5cZBBT1wdL9JN5ykE1GgXQk5ie6NPFeqc-vn_44LmLSCIf4T6YWFQNSaSGXxrGrU25F9Q0_YT7gKqhTeIAwtXdH6wwn_v2QUCJB9bFSz0B_w/s16000/25.png"
+                alt="Thu mua phế liệu máy móc"
+              />
+              <div class="caption">
+                <span>Phế Liệu Từ Máy Móc Cũ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="price-list" style="background: var(--bg-grey)">
         <div class="container">
           <h2 class="section-title">BẢNG GIÁ THU MUA HÔM NAY</h2>
@@ -915,6 +1066,7 @@
           </div>
         </div>
       </section>
+
       <section id="process">
         <div class="container">
           <h2 class="section-title">QUY TRÌNH THU MUA CHUYÊN NGHIỆP</h2>
