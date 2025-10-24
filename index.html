@@ -139,28 +139,13 @@
         align-items: center;
         height: 80px;
       }
-      .navbar .logo {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
-      .navbar .logo .logo-icon {
-        height: 80px;
-        width: auto;
-      }
-      .navbar .logo .logo-text {
-        font-size: 1.8rem;
-        font-weight: 700;
-        color: var(--primary-color);
-        line-height: 1;
-        text-transform: uppercase;
-      }
+
       .navbar .nav-links {
         list-style: none;
         display: flex;
       }
       .navbar .nav-links li {
-        margin-left: 25px;
+        margin-left: 15px;
       }
       .navbar .nav-links a {
         color: var(--text-dark);
@@ -169,13 +154,53 @@
         padding: 5px 0;
         border-bottom: 2px solid transparent;
         transition: all 0.3s ease;
-        font-size: 1rem;
+        font-size: 0.85rem;
         white-space: nowrap;
       }
       .navbar .nav-links a:hover,
       .navbar .nav-links a.active {
         color: var(--primary-color);
         border-bottom-color: var(--primary-color);
+      }
+      /* === CSS MỚI CHO LOGO & TÊN CÔNG TY === */
+
+      .navbar .logo {
+        display: flex; /* Dùng Flexbox để xếp các item trên một hàng */
+        align-items: center; /* Căn giữa các item theo chiều dọc */
+        gap: 12px; /* Tạo khoảng cách giữa logo và chữ */
+
+        /* Xoá các thuộc tính cũ nếu có để tránh xung đột */
+        font-size: initial;
+        font-weight: initial;
+      }
+
+      .navbar .logo .logo-icon {
+        height: 80px; /* Điều chỉnh chiều cao của logo nếu cần */
+        width: auto;
+      }
+
+      .navbar .logo .logo-text {
+        font-size: 1.8rem; /* Lấy lại style chữ cũ */
+        font-weight: 700;
+        color: var(--primary-color);
+        line-height: 1; /* Đảm bảo chữ không quá cao */
+      }
+
+      /* === RESPONSIVE CHO LOGO TRÊN DI ĐỘNG === */
+      @media (max-width: 768px) {
+        .navbar .logo .logo-icon {
+          height: 65px; /* Cho logo nhỏ lại một chút */
+        }
+        .navbar .logo .logo-text {
+          font-size: 1.3rem; /* Cho chữ nhỏ lại một chút */
+        }
+      }
+
+      /* Tùy chọn: Ẩn chữ trên màn hình rất nhỏ để tiết kiệm không gian */
+      @media (max-width: 480px) {
+        .navbar .logo .logo-text {
+          display: none;
+        }
       }
       .menu-icon {
         display: none;
@@ -744,6 +769,7 @@
               <li>Đội ngũ bốc xếp, vận chuyển chuyên nghiệp.</li>
               <li>Cân đo chính xác, minh bạch.</li>
               <li>Thanh toán một lần ngay tại chỗ.</li>
+              <li>Hoa hồng cao cho người giới thiệu.</li>
             </ul>
           </div>
         </div>
