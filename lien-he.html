@@ -4,25 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Liên Hệ Thu Mua Phế Liệu Giá Cao - Công Ty Thu Mua Phế Liệu Đức Minh
+      Liên Hệ Thu Mua Phế Liệu Giá Cao - 0936.350.118 | Công Ty Đức Minh
     </title>
     <meta
       name="description"
-      content="Công ty Đức Minh chuyên thu mua vật tư tồn kho, cáp điện (đồng, nhôm), dây DC, thiết bị điện từ các dự án với giá cao nhất. Dịch vụ thu mua tận nơi, uy tín, thanh toán nhanh. Gọi ngay 0936.350.118 (Mr. Đức)!"
+      content="Liên hệ ngay với Công ty Đức Minh qua Hotline/Zalo 0936.350.118 để nhận báo giá thu mua phế liệu, vật tư tồn kho cao nhất. Hỗ trợ 24/7, khảo sát tận nơi miễn phí."
     />
 
     <meta
       name="keywords"
-      content="thu mua vật tư tồn kho, thu mua cáp điện, thanh lý vật tư, thu mua dây điện, cáp đồng cũ, cáp nhôm, dây DC solar, thang máng cáp, kẹp pin, thu mua thiết bị điện, công ty đức minh"
+      content="liên hệ thu mua phế liệu, số điện thoại thu mua phế liệu, báo giá phế liệu, công ty đức minh, thu mua tận nơi"
     />
 
     <meta
       property="og:title"
-      content="Chuyên Thu Mua Vật Tư Tồn Kho, Cáp Điện Giá Cao - Công Ty Đức Minh"
+      content="Liên Hệ Thu Mua Phế Liệu Giá Cao - 0936.350.118 | Công Ty Đức Minh"
     />
     <meta
       property="og:description"
-      content="Đức Minh chuyên thu mua tận nơi các loại vật tư tồn kho, cáp điện, thiết bị điện từ dự án với giá cao. Uy tín, thanh toán nhanh gọn. Liên hệ ngay!"
+      content="Cần thanh lý phế liệu? Gọi ngay Đức Minh để nhận tư vấn và báo giá miễn phí, nhanh chóng. Chúng tôi luôn sẵn sàng phục vụ bạn."
     />
     <meta
       property="og:image"
@@ -90,6 +90,7 @@
         max-width: 100%;
         height: auto;
         display: block;
+        border-radius: 8px;
       }
       a {
         text-decoration: none;
@@ -104,6 +105,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
       }
       .top-bar a {
         color: var(--text-light);
@@ -121,45 +123,22 @@
         align-items: center;
         height: 80px;
       }
-      /* === CSS MỚI CHO LOGO & TÊN CÔNG TY === */
-
       .navbar .logo {
-        display: flex; /* Dùng Flexbox để xếp các item trên một hàng */
-        align-items: center; /* Căn giữa các item theo chiều dọc */
-        gap: 12px; /* Tạo khoảng cách giữa logo và chữ */
-
-        /* Xoá các thuộc tính cũ nếu có để tránh xung đột */
+        display: flex;
+        align-items: center;
+        gap: 12px;
         font-size: initial;
         font-weight: initial;
       }
-
       .navbar .logo .logo-icon {
-        height: 80px; /* Điều chỉnh chiều cao của logo nếu cần */
+        height: 80px;
         width: auto;
       }
-
       .navbar .logo .logo-text {
-        font-size: 1.8rem; /* Lấy lại style chữ cũ */
+        font-size: 1.8rem;
         font-weight: 700;
         color: var(--primary-color);
-        line-height: 1; /* Đảm bảo chữ không quá cao */
-      }
-
-      /* === RESPONSIVE CHO LOGO TRÊN DI ĐỘNG === */
-      @media (max-width: 768px) {
-        .navbar .logo .logo-icon {
-          height: 65px; /* Cho logo nhỏ lại một chút */
-        }
-        .navbar .logo .logo-text {
-          font-size: 1.3rem; /* Cho chữ nhỏ lại một chút */
-        }
-      }
-
-      /* Tùy chọn: Ẩn chữ trên màn hình rất nhỏ để tiết kiệm không gian */
-      @media (max-width: 480px) {
-        .navbar .logo .logo-text {
-          display: none;
-        }
+        line-height: 1;
       }
       .navbar .nav-links {
         list-style: none;
@@ -207,28 +186,64 @@
         background-color: #e67e22;
         transform: scale(1.05);
       }
+
+      /* === TRANG LIÊN HỆ === */
       .contact-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-        align-items: start;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 50px;
+        align-items: flex-start;
+      }
+      .contact-details h3 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
       }
       .contact-info-item {
-        margin-bottom: 20px;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 25px;
+        font-size: 1.05rem;
+      }
+      .contact-info-item .icon {
+        margin-right: 15px;
+        color: var(--primary-color);
+        width: 24px;
+        flex-shrink: 0;
+        margin-top: 4px;
       }
       .contact-info-item strong {
         display: block;
+        color: var(--text-dark);
+        margin-bottom: 3px;
+        font-size: 1rem;
+      }
+      .contact-info-item a {
+        color: var(--text-dark);
+      }
+      .contact-info-item a:hover {
         color: var(--primary-color);
-        margin-bottom: 5px;
+      }
+
+      .contact-form-wrapper {
+        background: var(--bg-grey);
+        padding: 30px;
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+      }
+      .contact-form-wrapper h3 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        text-align: center;
       }
       .contact-form input,
       .contact-form textarea {
         width: 100%;
-        padding: 12px;
+        padding: 15px;
         margin-bottom: 15px;
         border: 1px solid var(--border-color);
         border-radius: 5px;
         font-size: 1rem;
+        font-family: inherit;
       }
       .contact-form textarea {
         resize: vertical;
@@ -236,18 +251,6 @@
       }
       .contact-form button {
         width: 100%;
-        padding: 15px;
-        border: none;
-        border-radius: 5px;
-        background-color: var(--primary-color);
-        color: var(--text-light);
-        font-size: 1.1rem;
-        font-weight: 700;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-      .contact-form button:hover {
-        background-color: #c00;
       }
       .map-section iframe {
         width: 100%;
@@ -264,7 +267,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 40px;
-        padding-bottom: 80px;
+        padding-bottom: 40px;
       }
       .footer-col h4 {
         font-size: 1.2rem;
@@ -275,6 +278,10 @@
       .footer-col p,
       .footer-col li {
         margin-bottom: 10px;
+      }
+      .footer-col ul {
+        list-style: none;
+        padding: 0;
       }
       .footer-col a {
         color: #ccc;
@@ -287,13 +294,8 @@
         border-radius: 8px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         overflow: hidden;
-        height: 100%;
+        height: 92%;
         min-height: 220px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .footer-col .map-container:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
       }
       .footer-col .map-container iframe {
         width: 100%;
@@ -340,11 +342,18 @@
         background-color: var(--zalo-color);
       }
       @media (max-width: 992px) {
+        .navbar .logo .logo-text {
+          font-size: 1.5rem;
+        }
         .navbar .nav-links li {
           margin-left: 10px;
         }
         .navbar .nav-links a {
           font-size: 0.75rem;
+        }
+        .contact-grid {
+          grid-template-columns: 1fr;
+          gap: 50px;
         }
       }
       @media (max-width: 768px) {
@@ -355,10 +364,21 @@
           font-size: 2rem;
         }
         .top-bar {
-          display: none;
+          font-size: 0.8rem;
+        }
+        .top-bar .container {
+          justify-content: center;
+          text-align: center;
+          gap: 5px;
         }
         .navbar .container {
           position: relative;
+        }
+        .navbar .logo .logo-icon {
+          height: 65px;
+        }
+        .navbar .logo .logo-text {
+          font-size: 1.3rem;
         }
         .menu-icon {
           display: block;
@@ -392,8 +412,10 @@
           padding: 12px 28px;
           font-size: 0.9rem;
         }
-        .contact-grid {
-          grid-template-columns: 1fr;
+      }
+      @media (max-width: 480px) {
+        .navbar .logo .logo-text {
+          display: none;
         }
       }
     </style>
@@ -415,8 +437,6 @@
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
           y="0px"
-          width="96"
-          height="96"
           viewBox="0 0 48 48"
         >
           <path
@@ -442,9 +462,8 @@
           <path
             fill="#2962ff"
             d="M21.25,18h-8v1.5h5.321L13,26h0.026c-0.163,0.211-0.276,0.463-0.276,0.75V27h7.5 c0.276,0,0.5-0.224,0.5-0.5v-1h-5.321L21,19h-0.026c0.163-0.211,0.276-0.463,0.276-0.75V18z"
-          ></path>
-        </svg>
-      </a>
+          ></path></svg
+      ></a>
     </div>
 
     <div class="top-bar">
@@ -492,72 +511,136 @@
     <main>
       <section id="contact-page">
         <div class="container">
-          <h1 class="section-title">Liên Hệ Với Chúng Tôi</h1>
+          <h1 class="section-title">Kết Nối Với Đức Minh</h1>
           <p class="section-subtitle">
-            Chúng tôi luôn sẵn sàng hỗ trợ bạn 24/7. Hãy liên hệ ngay để được tư
-            vấn và báo giá tốt nhất!
+            Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn 24/7. Hãy liên hệ
+            ngay để nhận được tư vấn và báo giá tốt nhất!
           </p>
 
           <div class="contact-grid">
             <div class="contact-details">
-              <h3>Thông Tin Công Ty TNHH Đức Minh</h3>
+              <h3>Thông Tin Liên Hệ Trực Tiếp</h3>
+              <p style="margin-bottom: 30px">
+                Dù yêu cầu của bạn lớn hay nhỏ, đừng ngần ngại kết nối với chúng
+                tôi. Đội ngũ Đức Minh cam kết phản hồi nhanh chóng và tận tâm.
+              </p>
+
               <div class="contact-info-item">
-                <strong>Địa chỉ:</strong>
-                <span>14 ấp 2, Đông Thạnh, Hóc Môn, Thành phố Hồ Chí Minh</span>
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2C7.589 2 4 5.589 4 10C4 12.899 5.822 15.429 8.354 16.597L11.18 22.382C11.332 22.701 11.651 22.909 12 22.909C12.349 22.909 12.668 22.701 12.82 22.382L15.646 16.597C18.178 15.429 20 12.899 20 10C20 5.589 16.411 2 12 2ZM12 13C10.343 13 9 11.657 9 10C9 8.343 10.343 7 12 7C13.657 7 15 8.343 15 10C15 11.657 13.657 13 12 13Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Trụ sở chính:</strong>
+                  <span>14 ấp 2, Đông Thạnh, Hóc Môn, TP. HCM</span>
+                </div>
               </div>
+
               <div class="contact-info-item">
-                <strong>Hotline / Zalo:</strong>
-                <a
-                  href="tel:0936350118"
-                  style="color: var(--primary-color); font-weight: bold"
-                  >0936.350.118</a
-                >
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M3.513 5.234C4.984 2.902 7.713 1.512 10.512 1.512C16.223 1.512 22.488 7.777 22.488 13.488C22.488 16.287 21.098 19.016 18.766 20.487C18.595 20.589 18.406 20.641 18.216 20.641C17.954 20.641 17.697 20.516 17.514 20.297L15.181 17.525C14.908 17.199 14.945 16.712 15.271 16.439C16.324 15.553 16.923 14.347 16.923 12.986C16.923 10.158 14.029 7.796 11.013 7.796C9.652 7.796 8.446 8.395 7.56 9.448C7.287 9.774 6.801 9.811 6.474 9.538L3.702 7.205C3.484 7.022 3.359 6.765 3.359 6.503C3.359 6.332 3.411 6.164 3.513 6.012V5.234Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Hotline / Zalo (Mr. Đức):</strong>
+                  <a
+                    href="tel:0936350118"
+                    style="font-size: 1.2rem; font-weight: bold"
+                    >0936.350.118</a
+                  >
+                </div>
               </div>
+
               <div class="contact-info-item">
-                <strong>Email:</strong>
-                <a
-                  href="mailto:quibinh0118@gmail.com"
-                  style="color: var(--primary-color)"
-                  >quibinh0118@gmail.com</a
-                >
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M2.003 5.884L9.92 12.228C11.231 13.284 12.769 13.284 14.08 12.228L21.997 5.884C21.933 4.823 21.02 4 20 4H4C2.98 4 2.067 4.823 2.003 5.884ZM22 8.118L14.865 13.911C13.161 15.286 10.839 15.286 9.135 13.911L2 8.118V18C2 19.105 2.895 20 4 20H20C21.105 20 22 19.105 22 18V8.118Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Email:</strong>
+                  <a href="mailto:quibinh0118@gmail.com"
+                    >quibinh0118@gmail.com</a
+                  >
+                </div>
               </div>
+
               <div class="contact-info-item">
-                <strong>Giờ làm việc:</strong>
-                <span>Thứ Hai - Chủ Nhật: 7:00 đến 21:00</span>
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2ZM12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20Z"
+                    ></path>
+                    <path d="M12 6L12 12 16 14"></path>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Giờ làm việc:</strong>
+                  <span>7:00 - 21:00 (Tất cả các ngày trong tuần)</span>
+                </div>
               </div>
             </div>
 
             <div class="contact-form-wrapper">
-              <h3>Gửi Yêu Cầu Báo Giá</h3>
+              <h3>Hoặc Gửi Yêu Cầu Cho Chúng Tôi</h3>
               <form class="contact-form" action="#" method="POST">
                 <input
                   type="text"
                   name="name"
-                  placeholder="Họ và Tên của bạn"
+                  placeholder="Họ và Tên của bạn *"
                   required
                 />
                 <input
                   type="tel"
                   name="phone"
-                  placeholder="Số điện thoại"
+                  placeholder="Số điện thoại liên hệ *"
                   required
                 />
                 <textarea
                   name="message"
-                  placeholder="Nội dung cần tư vấn (ví dụ: cần bán cáp điện, thanh lý nhà xưởng...)"
+                  placeholder="Mô tả ngắn gọn về vật tư cần thanh lý (ví dụ: cần bán 1 tấn cáp đồng, thanh lý khung sắt nhà xưởng...)*"
                   required
                 ></textarea>
-                <button type="submit" class="btn">Gửi Yêu Cầu</button>
+                <button type="submit" class="btn">
+                  Gửi Yêu Cầu & Nhận Báo Giá
+                </button>
               </form>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="map-section" style="padding-top: 0">
+      <section class="map-section" style="padding: 0">
         <div class="container">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.7009919352004!2d106.63376947534081!3d10.910313556709253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d70677247829%3A0xab4886d2a9b58705!2zQ8OUTkcgVFkgVEhVIE1VQSBQSOG6viBMSeG7hlUgxJDhu6hDIE1JTkg!5e0!3m2!1svi!2s!4v1761195576845!5m2!1svi!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.174827552096!2d106.6111000748057!3d10.874319157291122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752a1a8e97669b%3A0x23315a60e86b0e02!2z4bqlcCAyLCDEkMO0bmcgVGjhuqFuaCwgSMOzYyBNw7RuLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdE5hbQ!5e0!3m2!1svi!2s!4v1729801825807!5m2!1svi!2s"
+            width="600"
+            height="450"
+            style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -579,18 +662,19 @@
           </div>
           <div class="footer-col">
             <h4>Thông Tin Liên Hệ</h4>
-            <p>
-              <strong>Địa chỉ:</strong> 14 ấp 2, Đông Thạnh, Hóc Môn, Thành phố
-              Hồ Chí Minh
-            </p>
-            <p>
-              <strong>Hotline:</strong>
-              <a href="tel:0936350118">0936.350.118</a>
-            </p>
-            <p>
-              <strong>Email:</strong>
-              <a href="mailto:info@tenmien.com">info@tenmien.com</a>
-            </p>
+            <ul>
+              <li>
+                <strong>Địa chỉ:</strong> 14 ấp 2, Đông Thạnh, Hóc Môn, TP. HCM
+              </li>
+              <li>
+                <strong>Hotline:</strong>
+                <a href="tel:0936350118">0936.350.118</a>
+              </li>
+              <li>
+                <strong>Email:</strong>
+                <a href="mailto:quibinh0118@gmail.com">quibinh0118@gmail.com</a>
+              </li>
+            </ul>
           </div>
           <div class="footer-col">
             <h4>Dịch Vụ Chính</h4>
@@ -623,19 +707,28 @@
     </footer>
 
     <script>
-      const menuIcon = document.getElementById("menu-icon"),
-        navLinks = document.getElementById("nav-links");
-      menuIcon &&
+      // === SCRIPT CHO MENU MOBILE ===
+      const menuIcon = document.getElementById("menu-icon");
+      const navLinks = document.getElementById("nav-links");
+      if (menuIcon) {
         menuIcon.addEventListener("click", () => {
           navLinks.classList.toggle("active");
         });
+      }
+
+      // === SCRIPT LÀM NỔI BẬT MENU ===
       document.addEventListener("DOMContentLoaded", () => {
-        const e = window.location.pathname.split("/").pop() || "index.html",
-          t = document.querySelectorAll("#nav-links a");
-        t.forEach((c) => {
-          c.getAttribute("href") === e
-            ? c.classList.add("active")
-            : c.classList.remove("active");
+        const currentPage =
+          window.location.pathname.split("/").pop() || "index.html";
+        const navLinksList = document.querySelectorAll("#nav-links a");
+
+        navLinksList.forEach((link) => {
+          const linkPage = link.getAttribute("href");
+          if (linkPage === currentPage) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
         });
       });
     </script>

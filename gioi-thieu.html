@@ -3,24 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Giới Thiệu Công Ty Thu Mua Phế Liệu Đức Minh</title>
+    <title>
+      Giới Thiệu Công Ty Thu Mua Phế Liệu Đức Minh - Uy Tín & Chuyên Nghiệp
+    </title>
     <meta
       name="description"
-      content="Công ty Đức Minh chuyên thu mua vật tư tồn kho, cáp điện (đồng, nhôm), dây DC, thiết bị điện từ các dự án với giá cao nhất. Dịch vụ thu mua tận nơi, uy tín, thanh toán nhanh. Gọi ngay 0936.350.118 (Mr. Đức)!"
+      content="Tìm hiểu về Công ty Đức Minh - Đơn vị với hơn 10 năm kinh nghiệm thu mua phế liệu, vật tư công nghiệp giá cao. Cam kết uy tín, chuyên nghiệp và là đối tác tin cậy của mọi doanh nghiệp."
     />
 
     <meta
       name="keywords"
-      content="thu mua vật tư tồn kho, thu mua cáp điện, thanh lý vật tư, thu mua dây điện, cáp đồng cũ, cáp nhôm, dây DC solar, thang máng cáp, kẹp pin, thu mua thiết bị điện, công ty đức minh"
+      content="giới thiệu công ty đức minh, về chúng tôi, thu mua phế liệu uy tín, công ty môi trường, xử lý vật tư tồn kho"
     />
 
     <meta
       property="og:title"
-      content="Chuyên Thu Mua Vật Tư Tồn Kho, Cáp Điện Giá Cao - Công Ty Đức Minh"
+      content="Giới Thiệu Công Ty Thu Mua Phế Liệu Đức Minh - Uy Tín & Chuyên Nghiệp"
     />
     <meta
       property="og:description"
-      content="Đức Minh chuyên thu mua tận nơi các loại vật tư tồn kho, cáp điện, thiết bị điện từ dự án với giá cao. Uy tín, thanh toán nhanh gọn. Liên hệ ngay!"
+      content="Với hơn 10 năm kinh nghiệm, Đức Minh tự hào là đối tác tin cậy trong lĩnh vực thu mua phế liệu và vật tư tồn kho, mang lại giá trị cao nhất cho khách hàng."
     />
     <meta
       property="og:image"
@@ -36,6 +38,7 @@
       type="image/x-icon"
     />
     <style>
+      /* === CÀI ĐẶT CHUNG & BIẾN MÀU === */
       :root {
         --primary-color: #e90b0b;
         --secondary-color: #ff8c00;
@@ -47,14 +50,17 @@
         --bg-grey: #f4f4f4;
         --border-color: #ddd;
       }
+
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
+
       html {
         scroll-behavior: smooth;
       }
+
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           "Helvetica Neue", Arial, sans-serif;
@@ -62,14 +68,17 @@
         color: var(--text-dark);
         background-color: var(--bg-light);
       }
+
       .container {
         max-width: 1200px;
         margin: auto;
         padding: 0 15px;
       }
+
       section {
         padding: 60px 0;
       }
+
       .section-title {
         text-align: center;
         font-size: 2.5rem;
@@ -77,6 +86,7 @@
         color: var(--primary-color);
         text-transform: uppercase;
       }
+
       .section-subtitle {
         text-align: center;
         font-size: 1rem;
@@ -84,14 +94,19 @@
         margin-top: -15px;
         margin-bottom: 40px;
       }
+
       img {
         max-width: 100%;
         height: auto;
         display: block;
+        border-radius: 8px;
       }
+
       a {
         text-decoration: none;
       }
+
+      /* === TOP BAR === */
       .top-bar {
         background: var(--primary-color);
         color: var(--text-light);
@@ -102,10 +117,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
       }
       .top-bar a {
         color: var(--text-light);
       }
+
+      /* === HEADER & NAVBAR === */
       .navbar {
         background: var(--bg-light);
         position: sticky;
@@ -119,46 +137,7 @@
         align-items: center;
         height: 80px;
       }
-      /* === CSS MỚI CHO LOGO & TÊN CÔNG TY === */
 
-      .navbar .logo {
-        display: flex; /* Dùng Flexbox để xếp các item trên một hàng */
-        align-items: center; /* Căn giữa các item theo chiều dọc */
-        gap: 12px; /* Tạo khoảng cách giữa logo và chữ */
-
-        /* Xoá các thuộc tính cũ nếu có để tránh xung đột */
-        font-size: initial;
-        font-weight: initial;
-      }
-
-      .navbar .logo .logo-icon {
-        height: 80px; /* Điều chỉnh chiều cao của logo nếu cần */
-        width: auto;
-      }
-
-      .navbar .logo .logo-text {
-        font-size: 1.8rem; /* Lấy lại style chữ cũ */
-        font-weight: 700;
-        color: var(--primary-color);
-        line-height: 1; /* Đảm bảo chữ không quá cao */
-      }
-
-      /* === RESPONSIVE CHO LOGO TRÊN DI ĐỘNG === */
-      @media (max-width: 768px) {
-        .navbar .logo .logo-icon {
-          height: 65px; /* Cho logo nhỏ lại một chút */
-        }
-        .navbar .logo .logo-text {
-          font-size: 1.3rem; /* Cho chữ nhỏ lại một chút */
-        }
-      }
-
-      /* Tùy chọn: Ẩn chữ trên màn hình rất nhỏ để tiết kiệm không gian */
-      @media (max-width: 480px) {
-        .navbar .logo .logo-text {
-          display: none;
-        }
-      }
       .navbar .nav-links {
         list-style: none;
         display: flex;
@@ -181,6 +160,28 @@
         color: var(--primary-color);
         border-bottom-color: var(--primary-color);
       }
+      /* === CSS MỚI CHO LOGO & TÊN CÔNG TY === */
+
+      .navbar .logo {
+        display: flex; /* Dùng Flexbox để xếp các item trên một hàng */
+        align-items: center; /* Căn giữa các item theo chiều dọc */
+        gap: 12px; /* Tạo khoảng cách giữa logo và chữ */
+        font-size: initial;
+        font-weight: initial;
+      }
+
+      .navbar .logo .logo-icon {
+        height: 80px; /* Điều chỉnh chiều cao của logo nếu cần */
+        width: auto;
+      }
+
+      .navbar .logo .logo-text {
+        font-size: 1.8rem; /* Lấy lại style chữ cũ */
+        font-weight: 700;
+        color: var(--primary-color);
+        line-height: 1; /* Đảm bảo chữ không quá cao */
+      }
+
       .menu-icon {
         display: none;
         cursor: pointer;
@@ -207,33 +208,43 @@
       }
       .about-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 50px;
         align-items: center;
       }
-      .about-grid h3 {
+      .about-grid .about-text h3 {
         font-size: 1.8rem;
         color: var(--primary-color);
         margin-bottom: 15px;
       }
-      .about-grid p {
+      .about-grid .about-text h4 {
+        font-size: 1.3rem;
+        color: var(--text-dark);
+        margin-top: 25px;
         margin-bottom: 15px;
       }
-      .about-grid ul {
-        list-style: none;
+      .about-grid .about-text p {
+        margin-bottom: 15px;
       }
-      .about-grid ul li {
-        margin-bottom: 10px;
-        padding-left: 25px;
+      .about-grid .about-text ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .about-grid .about-text ul li {
+        margin-bottom: 12px;
+        padding-left: 28px;
         position: relative;
       }
-      .about-grid ul li::before {
+      .about-grid .about-text ul li::before {
         content: "✔";
         color: var(--primary-color);
         position: absolute;
         left: 0;
-        font-weight: 700;
+        font-weight: bold;
+        font-size: 1.2rem;
       }
+
+      /* === FOOTER === */
       .footer {
         background: #222;
         color: #ccc;
@@ -243,7 +254,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 40px;
-        padding-bottom: 80px;
+        padding-bottom: 40px;
       }
       .footer-col h4 {
         font-size: 1.2rem;
@@ -254,6 +265,10 @@
       .footer-col p,
       .footer-col li {
         margin-bottom: 10px;
+      }
+      .footer-col ul {
+        list-style: none;
+        padding: 0;
       }
       .footer-col a {
         color: #ccc;
@@ -266,13 +281,8 @@
         border-radius: 8px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         overflow: hidden;
-        height: 100%;
+        height: 92%;
         min-height: 220px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .footer-col .map-container:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
       }
       .footer-col .map-container iframe {
         width: 100%;
@@ -284,6 +294,8 @@
         padding: 20px 0;
         border-top: 1px solid #444;
       }
+
+      /* === NÚT GỌI & ZALO NỔI === */
       .floating-buttons {
         position: fixed;
         bottom: 20px;
@@ -318,7 +330,11 @@
       .zalo-float {
         background-color: var(--zalo-color);
       }
+      /* === RESPONSIVE DESIGN === */
       @media (max-width: 992px) {
+        .navbar .logo .logo-text {
+          font-size: 1.5rem;
+        }
         .navbar .nav-links li {
           margin-left: 10px;
         }
@@ -328,10 +344,12 @@
         .about-grid {
           grid-template-columns: 1fr;
         }
-        .about-grid img {
+        .about-grid .about-image {
+          order: -1;
           margin-bottom: 30px;
         }
       }
+
       @media (max-width: 768px) {
         section {
           padding: 40px 0;
@@ -340,10 +358,21 @@
           font-size: 2rem;
         }
         .top-bar {
-          display: none;
+          font-size: 0.8rem;
+        }
+        .top-bar .container {
+          justify-content: center;
+          text-align: center;
+          gap: 5px;
         }
         .navbar .container {
           position: relative;
+        }
+        .navbar .logo .logo-icon {
+          height: 65px;
+        }
+        .navbar .logo .logo-text {
+          font-size: 1.3rem;
         }
         .menu-icon {
           display: block;
@@ -377,11 +406,10 @@
           padding: 12px 28px;
           font-size: 0.9rem;
         }
-        .about-grid {
-          grid-template-columns: 1fr;
-        }
-        .about-grid img {
-          margin-bottom: 30px;
+      }
+      @media (max-width: 480px) {
+        .navbar .logo .logo-text {
+          display: none;
         }
       }
     </style>
@@ -403,8 +431,6 @@
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
           y="0px"
-          width="96"
-          height="96"
           viewBox="0 0 48 48"
         >
           <path
@@ -430,9 +456,8 @@
           <path
             fill="#2962ff"
             d="M21.25,18h-8v1.5h5.321L13,26h0.026c-0.163,0.211-0.276,0.463-0.276,0.75V27h7.5 c0.276,0,0.5-0.224,0.5-0.5v-1h-5.321L21,19h-0.026c0.163-0.211,0.276-0.463,0.276-0.75V18z"
-          ></path>
-        </svg>
-      </a>
+          ></path></svg
+      ></a>
     </div>
 
     <div class="top-bar">
@@ -478,73 +503,92 @@
     </header>
 
     <main>
-      <section id="gioi-thieu-content">
+      <section id="about-page">
         <div class="container">
           <h1 class="section-title">Về Công Ty Đức Minh</h1>
           <p class="section-subtitle">
-            Uy tín - Chuyên nghiệp - Đối tác tin cậy của mọi công trình
+            Đối tác tin cậy trong lĩnh vực thu mua vật tư & phế liệu công nghiệp
           </p>
 
-          <div class="about-grid" style="grid-template-columns: 1fr">
-            <div class="about-text" style="text-align: center">
+          <div class="about-grid">
+            <div class="about-image">
               <img
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0I2UD9dYwpJ4pYnse8BMfgK8jYdaEnVVy5Lp0bSA0Hls1pA_zKMNE5lYfcMpgg4b3ctEPrzMu6TomQReRJSAEueX71xF-rBVn4SH_IWngLTUvwHBMhRCtnoT7B0kwA4z2YugEeM_XOsKHOY7ccEFSs2_4YcYk9LAVAzrw0L0bGhZPddOB_s-nDKylcJs/s16000/500x300%202.png"
-                alt="Đội ngũ công ty Đức Minh"
-                style="
-                  margin-bottom: 30px;
-                  border-radius: 8px;
-                  width: 100%;
-                  max-width: 800px;
-                  margin-left: auto;
-                  margin-right: auto;
-                "
+                alt="Đội ngũ chuyên nghiệp của Công ty Đức Minh"
               />
-
-              <h3 style="text-align: left">
-                Đối Tác Tin Cậy Trong Lĩnh Vực Thu Mua Phế Liệu & Vật Tư
-              </h3>
-              <p style="text-align: left">
+            </div>
+            <div class="about-text">
+              <h3>Hành Trình Hơn 10 Năm Xây Dựng Uy Tín</h3>
+              <p>
                 <strong>Công ty TNHH Đức Minh</strong> tự hào là một trong những
                 đơn vị tiên phong và uy tín nhất trong lĩnh vực thu mua vật tư,
-                thiết bị điện công nghiệp, phế liệu tồn kho từ các công trình,
-                dự án, nhà xưởng và khu công nghiệp trên toàn quốc.
+                thiết bị điện công nghiệp, và phế liệu tồn kho. Với hơn một thập
+                kỷ kinh nghiệm, chúng tôi đã xây dựng được một mạng lưới đối tác
+                rộng khắp và nhận được sự tin tưởng của hàng ngàn khách hàng, từ
+                các cá nhân, hộ gia đình cho đến các tập đoàn xây dựng và nhà
+                máy sản xuất lớn trên toàn quốc.
               </p>
-              <p style="text-align: left">
-                Trải qua hơn 10 năm hình thành và phát triển, chúng tôi đã xây
-                dựng được một mạng lưới đối tác rộng khắp và nhận được sự tin
-                tưởng của hàng ngàn khách hàng, từ các cá nhân, hộ gia đình cho
-                đến các tập đoàn xây dựng lớn. Chúng tôi hiểu rằng, việc xử lý
-                các loại vật tư, phế liệu dư thừa không chỉ giúp thu hồi vốn mà
-                còn góp phần quan trọng vào việc bảo vệ môi trường và giải phóng
-                mặt bằng nhanh chóng.
+              <p>
+                Chúng tôi hiểu rằng, việc xử lý các loại vật tư, phế liệu dư
+                thừa không chỉ giúp doanh nghiệp thu hồi vốn nhanh chóng mà còn
+                góp phần quan trọng vào việc bảo vệ môi trường và tối ưu hóa
+                không gian sản xuất. Vì vậy, Đức Minh ra đời với sứ mệnh mang
+                đến giải pháp thu mua toàn diện, hiệu quả và chuyên nghiệp nhất.
               </p>
 
-              <h3 style="margin-top: 40px; text-align: left">
-                Giá Trị Cốt Lõi Của Chúng Tôi
-              </h3>
-              <ul style="text-align: left">
+              <h4>Sứ Mệnh & Tầm Nhìn</h4>
+              <p>
+                <strong>Sứ mệnh:</strong> Cung cấp giải pháp thanh lý vật tư,
+                phế liệu hiệu quả nhất, giúp tối đa hóa giá trị tài sản cho
+                khách hàng, đồng thời góp phần thúc đẩy nền kinh tế tuần hoàn và
+                bảo vệ môi trường xanh, sạch, đẹp.
+              </p>
+              <p>
+                <strong>Tầm nhìn:</strong> Trở thành sự lựa chọn số một tại Việt
+                Nam trong lĩnh vực thu mua công nghiệp, được biết đến với sự
+                minh bạch, mức giá tốt nhất và dịch vụ khách hàng vượt trội.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-grid" style="margin-top: 50px">
+            <div class="about-text">
+              <h3>Giá Trị Cốt Lõi Làm Nên Thương Hiệu Đức Minh</h3>
+              <ul>
                 <li>
-                  <strong>Uy Tín Hàng Đầu:</strong> Luôn giữ chữ tín trong mọi
-                  giao dịch, đảm bảo cân đo chính xác, thẩm định giá minh bạch
-                  và không ép giá.
+                  <strong>Giá Cao Hàng Đầu:</strong> Chúng tôi cam kết đưa ra
+                  mức giá thu mua cạnh tranh nhất, luôn cao hơn 30% so với thị
+                  trường chung. Mức giá được thẩm định dựa trên chất lượng thực
+                  tế và cập nhật liên tục theo biến động của thị trường.
                 </li>
                 <li>
-                  <strong>Chuyên Nghiệp:</strong> Sở hữu đội ngũ nhân viên lành
-                  nghề, quy trình làm việc khoa học từ khâu khảo sát đến bốc
-                  xếp, vận chuyển và dọn dẹp kho bãi.
+                  <strong>Uy Tín - Minh Bạch:</strong> Mọi giao dịch tại Đức
+                  Minh đều được thực hiện dựa trên hợp đồng rõ ràng. Quy trình
+                  cân đo được thực hiện công khai, chính xác bằng các thiết bị
+                  hiện đại, tuyệt đối không có tình trạng ép giá hay gian lận.
                 </li>
                 <li>
-                  <strong>Khách Hàng là Trọng Tâm:</strong> Luôn đặt lợi ích của
-                  khách hàng lên hàng đầu, cam kết mang đến dịch vụ tốt nhất với
-                  mức giá thu mua cao nhất thị trường.
+                  <strong>Nhanh Chóng & Tận Nơi:</strong> Với đội xe tải chuyên
+                  dụng và đội ngũ nhân công bốc xếp chuyên nghiệp, chúng tôi sẵn
+                  sàng có mặt tận nơi trên toàn quốc ngay sau khi đạt được thỏa
+                  thuận, không quản ngại số lượng ít hay nhiều.
+                </li>
+                <li>
+                  <strong>Thanh Toán Liền Tay:</strong> Chúng tôi thực hiện
+                  thanh toán 100% một lần ngay sau khi quá trình thu gom hoàn
+                  tất. Khách hàng có thể lựa chọn nhận tiền mặt hoặc chuyển
+                  khoản một cách linh hoạt và nhanh chóng.
                 </li>
               </ul>
-
-              <div style="text-align: center; margin-top: 40px">
-                <a href="lien-he.html" class="btn"
-                  >Liên Hệ Ngay Với Chúng Tôi</a
-                >
+              <div style="margin-top: 30px">
+                <a href="lien-he.html" class="btn">Liên Hệ Tư Vấn Ngay</a>
               </div>
+            </div>
+            <div class="about-image">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4QgvIAdU37dvgPVErUskvsxWk1IrZLxQdb1mzal0KvJO77u9GmMsY349mogX-OrJTqKKoC-xojtcGjowAlhANxtAkTbAAUYv27q7deaAdkF3yG6mrbM52AWYnjvMYDxIUXE3XhhaVSmmPoQXt2t3zobhPaai6wiqtObDBFw3FtxDU4YQDBLqhUIGqajU/s16000/14.png"
+                alt="Thu mua phế liệu giá cao toàn quốc"
+              />
             </div>
           </div>
         </div>
@@ -564,18 +608,19 @@
           </div>
           <div class="footer-col">
             <h4>Thông Tin Liên Hệ</h4>
-            <p>
-              <strong>Địa chỉ:</strong> 14 ấp 2, Đông Thạnh, Hóc Môn, Thành phố
-              Hồ Chí Minh
-            </p>
-            <p>
-              <strong>Hotline:</strong>
-              <a href="tel:0936350118">0936.350.118</a>
-            </p>
-            <p>
-              <strong>Email:</strong>
-              <a href="mailto:info@tenmien.com">info@tenmien.com</a>
-            </p>
+            <ul>
+              <li>
+                <strong>Địa chỉ:</strong> 14 ấp 2, Đông Thạnh, Hóc Môn, TP. HCM
+              </li>
+              <li>
+                <strong>Hotline:</strong>
+                <a href="tel:0936350118">0936.350.118</a>
+              </li>
+              <li>
+                <strong>Email:</strong>
+                <a href="mailto:quibinh0118@gmail.com">quibinh0118@gmail.com</a>
+              </li>
+            </ul>
           </div>
           <div class="footer-col">
             <h4>Dịch Vụ Chính</h4>
@@ -608,19 +653,28 @@
     </footer>
 
     <script>
-      const menuIcon = document.getElementById("menu-icon"),
-        navLinks = document.getElementById("nav-links");
-      menuIcon &&
+      // === SCRIPT CHO MENU MOBILE ===
+      const menuIcon = document.getElementById("menu-icon");
+      const navLinks = document.getElementById("nav-links");
+      if (menuIcon) {
         menuIcon.addEventListener("click", () => {
           navLinks.classList.toggle("active");
         });
+      }
+
+      // === SCRIPT LÀM NỔI BẬT MENU ===
       document.addEventListener("DOMContentLoaded", () => {
-        const e = window.location.pathname.split("/").pop() || "index.html",
-          t = document.querySelectorAll("#nav-links a");
-        t.forEach((c) => {
-          c.getAttribute("href") === e
-            ? c.classList.add("active")
-            : c.classList.remove("active");
+        const currentPage =
+          window.location.pathname.split("/").pop() || "index.html";
+        const navLinksList = document.querySelectorAll("#nav-links a");
+
+        navLinksList.forEach((link) => {
+          const linkPage = link.getAttribute("href");
+          if (linkPage === currentPage) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
         });
       });
     </script>

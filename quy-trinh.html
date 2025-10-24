@@ -4,25 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Quy Trình Thu Mua Chuyên Nghiệp - Công Ty Thu Mua Phế Liệu Đức Minhh
+      Quy Trình Thu Mua Phế Liệu Chuyên Nghiệp, Nhanh Gọn | Công Ty Đức Minh
     </title>
     <meta
       name="description"
-      content="Công ty Đức Minh chuyên thu mua vật tư tồn kho, cáp điện (đồng, nhôm), dây DC, thiết bị điện từ các dự án với giá cao nhất. Dịch vụ thu mua tận nơi, uy tín, thanh toán nhanh. Gọi ngay 0936.350.118 (Mr. Đức)!"
+      content="Tìm hiểu quy trình thu mua phế liệu chuyên nghiệp 5 bước của Đức Minh: Tiếp nhận, Khảo sát & Báo giá, Ký hợp đồng, Thu gom và Thanh toán. Đảm bảo minh bạch, nhanh chóng và hiệu quả."
     />
 
     <meta
       name="keywords"
-      content="thu mua vật tư tồn kho, thu mua cáp điện, thanh lý vật tư, thu mua dây điện, cáp đồng cũ, cáp nhôm, dây DC solar, thang máng cáp, kẹp pin, thu mua thiết bị điện, công ty đức minh"
+      content="quy trình thu mua phế liệu, quy trình làm việc, thu mua chuyên nghiệp, các bước thu mua, công ty đức minh"
     />
 
     <meta
       property="og:title"
-      content="Chuyên Thu Mua Vật Tư Tồn Kho, Cáp Điện Giá Cao - Công Ty Đức Minh"
+      content="Quy Trình Thu Mua Phế Liệu Chuyên Nghiệp, Nhanh Gọn | Công Ty Đức Minh"
     />
     <meta
       property="og:description"
-      content="Đức Minh chuyên thu mua tận nơi các loại vật tư tồn kho, cáp điện, thiết bị điện từ dự án với giá cao. Uy tín, thanh toán nhanh gọn. Liên hệ ngay!"
+      content="Đức Minh áp dụng quy trình thu mua 5 bước khoa học, đảm bảo quyền lợi tối đa cho khách hàng: Tiếp nhận, Khảo sát, Ký hợp đồng, Thu gom và Thanh toán nhanh."
     />
     <meta
       property="og:image"
@@ -38,6 +38,7 @@
       type="image/x-icon"
     />
     <style>
+      /* === CÀI ĐẶT CHUNG & BIẾN MÀU === */
       :root {
         --primary-color: #e90b0b;
         --secondary-color: #ff8c00;
@@ -49,14 +50,17 @@
         --bg-grey: #f4f4f4;
         --border-color: #ddd;
       }
+
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
+
       html {
         scroll-behavior: smooth;
       }
+
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           "Helvetica Neue", Arial, sans-serif;
@@ -64,14 +68,17 @@
         color: var(--text-dark);
         background-color: var(--bg-light);
       }
+
       .container {
         max-width: 1200px;
         margin: auto;
         padding: 0 15px;
       }
+
       section {
         padding: 60px 0;
       }
+
       .section-title {
         text-align: center;
         font-size: 2.5rem;
@@ -79,6 +86,7 @@
         color: var(--primary-color);
         text-transform: uppercase;
       }
+
       .section-subtitle {
         text-align: center;
         font-size: 1rem;
@@ -86,14 +94,19 @@
         margin-top: -15px;
         margin-bottom: 40px;
       }
+
       img {
         max-width: 100%;
         height: auto;
         display: block;
+        border-radius: 8px;
       }
+
       a {
         text-decoration: none;
       }
+
+      /* === TOP BAR === */
       .top-bar {
         background: var(--primary-color);
         color: var(--text-light);
@@ -104,10 +117,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
       }
       .top-bar a {
         color: var(--text-light);
       }
+
+      /* === HEADER & NAVBAR === */
       .navbar {
         background: var(--bg-light);
         position: sticky;
@@ -121,46 +137,7 @@
         align-items: center;
         height: 80px;
       }
-      /* === CSS MỚI CHO LOGO & TÊN CÔNG TY === */
 
-      .navbar .logo {
-        display: flex; /* Dùng Flexbox để xếp các item trên một hàng */
-        align-items: center; /* Căn giữa các item theo chiều dọc */
-        gap: 12px; /* Tạo khoảng cách giữa logo và chữ */
-
-        /* Xoá các thuộc tính cũ nếu có để tránh xung đột */
-        font-size: initial;
-        font-weight: initial;
-      }
-
-      .navbar .logo .logo-icon {
-        height: 80px; /* Điều chỉnh chiều cao của logo nếu cần */
-        width: auto;
-      }
-
-      .navbar .logo .logo-text {
-        font-size: 1.8rem; /* Lấy lại style chữ cũ */
-        font-weight: 700;
-        color: var(--primary-color);
-        line-height: 1; /* Đảm bảo chữ không quá cao */
-      }
-
-      /* === RESPONSIVE CHO LOGO TRÊN DI ĐỘNG === */
-      @media (max-width: 768px) {
-        .navbar .logo .logo-icon {
-          height: 65px; /* Cho logo nhỏ lại một chút */
-        }
-        .navbar .logo .logo-text {
-          font-size: 1.3rem; /* Cho chữ nhỏ lại một chút */
-        }
-      }
-
-      /* Tùy chọn: Ẩn chữ trên màn hình rất nhỏ để tiết kiệm không gian */
-      @media (max-width: 480px) {
-        .navbar .logo .logo-text {
-          display: none;
-        }
-      }
       .navbar .nav-links {
         list-style: none;
         display: flex;
@@ -183,6 +160,28 @@
         color: var(--primary-color);
         border-bottom-color: var(--primary-color);
       }
+      /* === CSS MỚI CHO LOGO & TÊN CÔNG TY === */
+
+      .navbar .logo {
+        display: flex; /* Dùng Flexbox để xếp các item trên một hàng */
+        align-items: center; /* Căn giữa các item theo chiều dọc */
+        gap: 12px; /* Tạo khoảng cách giữa logo và chữ */
+        font-size: initial;
+        font-weight: initial;
+      }
+
+      .navbar .logo .logo-icon {
+        height: 80px; /* Điều chỉnh chiều cao của logo nếu cần */
+        width: auto;
+      }
+
+      .navbar .logo .logo-text {
+        font-size: 1.8rem; /* Lấy lại style chữ cũ */
+        font-weight: 700;
+        color: var(--primary-color);
+        line-height: 1; /* Đảm bảo chữ không quá cao */
+      }
+
       .menu-icon {
         display: none;
         cursor: pointer;
@@ -207,39 +206,94 @@
         background-color: #e67e22;
         transform: scale(1.05);
       }
-      .process-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-        text-align: center;
+
+      /* === QUY TRÌNH === */
+      .process-timeline {
         position: relative;
+        max-width: 1000px;
+        margin: 0 auto;
       }
-      .process-item {
+      .process-timeline::after {
+        content: "";
+        position: absolute;
+        width: 4px;
+        background-color: var(--primary-color);
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -2px;
+      }
+      .process-step {
+        padding: 10px 40px;
         position: relative;
-        padding: 20px;
-        background-color: var(--bg-light);
-        border-radius: 8px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
-        border: 1px solid var(--border-color);
+        background-color: inherit;
+        width: 50%;
       }
-      .process-item .step-number {
-        width: 60px;
-        height: 60px;
-        background: var(--primary-color);
-        color: var(--text-light);
+      .process-step::after {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -13px;
+        background-color: white;
+        border: 4px solid var(--primary-color);
+        top: 25px;
         border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.8rem;
+        z-index: 1;
+      }
+      .process-step.left {
+        left: 0;
+      }
+      .process-step.right {
+        left: 50%;
+      }
+      .process-step.left::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 32px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid var(--border-color);
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent var(--border-color);
+      }
+      .process-step.right::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 32px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid var(--border-color);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--border-color) transparent transparent;
+      }
+      .process-step.right::after {
+        left: -13px;
+      }
+      .process-content {
+        padding: 20px 30px;
+        background-color: white;
+        position: relative;
+        border-radius: 6px;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+      }
+      .process-content .step-number {
+        font-size: 1.5rem;
         font-weight: 700;
-        margin: 0 auto 20px;
-        border: 4px solid var(--bg-grey);
-      }
-      .process-item h3 {
-        margin-bottom: 10px;
         color: var(--primary-color);
+        margin-bottom: 5px;
       }
+      .process-content h3 {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+      }
+
+      /* === FOOTER === */
       .footer {
         background: #222;
         color: #ccc;
@@ -249,7 +303,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 40px;
-        padding-bottom: 80px;
+        padding-bottom: 40px;
       }
       .footer-col h4 {
         font-size: 1.2rem;
@@ -260,6 +314,10 @@
       .footer-col p,
       .footer-col li {
         margin-bottom: 10px;
+      }
+      .footer-col ul {
+        list-style: none;
+        padding: 0;
       }
       .footer-col a {
         color: #ccc;
@@ -272,13 +330,8 @@
         border-radius: 8px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         overflow: hidden;
-        height: 100%;
+        height: 92%;
         min-height: 220px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .footer-col .map-container:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
       }
       .footer-col .map-container iframe {
         width: 100%;
@@ -290,6 +343,8 @@
         padding: 20px 0;
         border-top: 1px solid #444;
       }
+
+      /* === NÚT GỌI & ZALO NỔI === */
       .floating-buttons {
         position: fixed;
         bottom: 20px;
@@ -324,7 +379,12 @@
       .zalo-float {
         background-color: var(--zalo-color);
       }
+
+      /* === RESPONSIVE DESIGN === */
       @media (max-width: 992px) {
+        .navbar .logo .logo-text {
+          font-size: 1.5rem;
+        }
         .navbar .nav-links li {
           margin-left: 10px;
         }
@@ -332,6 +392,7 @@
           font-size: 0.75rem;
         }
       }
+
       @media (max-width: 768px) {
         section {
           padding: 40px 0;
@@ -340,10 +401,21 @@
           font-size: 2rem;
         }
         .top-bar {
-          display: none;
+          font-size: 0.8rem;
+        }
+        .top-bar .container {
+          justify-content: center;
+          text-align: center;
+          gap: 5px;
         }
         .navbar .container {
           position: relative;
+        }
+        .navbar .logo .logo-icon {
+          height: 65px;
+        }
+        .navbar .logo .logo-text {
+          font-size: 1.3rem;
         }
         .menu-icon {
           display: block;
@@ -377,8 +449,32 @@
           padding: 12px 28px;
           font-size: 0.9rem;
         }
-        .process-grid {
-          grid-template-columns: 1fr;
+        /* Responsive cho timeline */
+        .process-timeline::after {
+          left: 31px;
+        }
+        .process-step {
+          width: 100%;
+          padding-left: 70px;
+          padding-right: 25px;
+        }
+        .process-step::before {
+          left: 60px;
+          border: medium solid var(--border-color);
+          border-width: 10px 10px 10px 0;
+          border-color: transparent var(--border-color) transparent transparent;
+        }
+        .process-step.left::after,
+        .process-step.right::after {
+          left: 18px;
+        }
+        .process-step.right {
+          left: 0%;
+        }
+      }
+      @media (max-width: 480px) {
+        .navbar .logo .logo-text {
+          display: none;
         }
       }
     </style>
@@ -400,8 +496,6 @@
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
           y="0px"
-          width="96"
-          height="96"
           viewBox="0 0 48 48"
         >
           <path
@@ -427,9 +521,8 @@
           <path
             fill="#2962ff"
             d="M21.25,18h-8v1.5h5.321L13,26h0.026c-0.163,0.211-0.276,0.463-0.276,0.75V27h7.5 c0.276,0,0.5-0.224,0.5-0.5v-1h-5.321L21,19h-0.026c0.163-0.211,0.276-0.463,0.276-0.75V18z"
-          ></path>
-        </svg>
-      </a>
+          ></path></svg
+      ></a>
     </div>
 
     <div class="top-bar">
@@ -475,68 +568,111 @@
     </header>
 
     <main>
-      <section id="process" style="background: var(--bg-grey)">
+      <section id="process-intro" style="background: var(--bg-grey)">
         <div class="container">
-          <h1 class="section-title">QUY TRÌNH THU MUA CỦA CHÚNG TÔI</h1>
+          <h1 class="section-title">QUY TRÌNH THU MUA CHUYÊN NGHIỆP</h1>
           <p class="section-subtitle">
-            Minh bạch - Nhanh chóng - Hiệu quả chỉ trong 4 bước đơn giản
+            Minh bạch - Nhanh chóng - Hiệu quả, mang lại sự an tâm tuyệt đối cho
+            khách hàng.
           </p>
+          <p style="text-align: center; max-width: 800px; margin: -20px auto 0">
+            Tại Đức Minh, chúng tôi tin rằng một quy trình làm việc rõ ràng là
+            nền tảng cho sự hợp tác thành công và bền vững. Chúng tôi đã xây
+            dựng quy trình thu mua khoa học, được tối ưu hóa qua nhiều năm kinh
+            nghiệm để đảm bảo mọi giao dịch diễn ra thuận lợi, nhanh chóng và
+            bảo vệ tối đa quyền lợi của Quý khách hàng.
+          </p>
+        </div>
+      </section>
 
-          <div class="process-grid">
-            <div class="process-item">
-              <div class="step-number">1</div>
-              <h3>Tiếp Nhận Thông Tin</h3>
-              <p>
-                Quý khách hàng liên hệ với Đức Minh qua Hotline/Zalo
-                <strong>0936.350.118</strong>. Cung cấp thông tin sơ bộ về loại
-                hàng hóa, số lượng và địa điểm. Chúng tôi sẽ tư vấn và hẹn lịch
-                khảo sát nhanh nhất có thể.
-              </p>
+      <section id="process-steps">
+        <div class="container">
+          <div class="process-timeline">
+            <div class="process-step left">
+              <div class="process-content">
+                <div class="step-number">Bước 1</div>
+                <h3>Tiếp Nhận Yêu Cầu & Tư Vấn</h3>
+                <p>
+                  Quý khách liên hệ với chúng tôi qua Hotline/Zalo
+                  <strong>0936.350.118</strong>. Đội ngũ tư vấn viên sẽ lắng
+                  nghe nhu cầu, thu thập thông tin sơ bộ về loại vật tư, số
+                  lượng ước tính, tình trạng và địa điểm. Chúng tôi sẽ tư vấn
+                  miễn phí và sắp xếp lịch hẹn khảo sát tận nơi thuận tiện nhất
+                  cho Quý khách.
+                </p>
+              </div>
             </div>
-            <div class="process-item">
-              <div class="step-number">2</div>
-              <h3>Khảo Sát & Báo Giá</h3>
-              <p>
-                Đội ngũ chuyên viên của chúng tôi sẽ đến tận nơi để thẩm định,
-                phân loại phế liệu, vật tư. Dựa trên chất lượng và giá cả thị
-                trường tại thời điểm đó, chúng tôi sẽ đưa ra mức giá thu mua cao
-                nhất và cạnh tranh nhất.
-              </p>
+
+            <div class="process-step right">
+              <div class="process-content">
+                <div class="step-number">Bước 2</div>
+                <h3>Khảo Sát & Báo Giá Tận Nơi</h3>
+                <p>
+                  Đội ngũ chuyên viên thẩm định của Đức Minh sẽ có mặt đúng hẹn.
+                  Chúng tôi tiến hành phân loại, đánh giá chất lượng và xác định
+                  khối lượng thực tế của vật tư. Dựa trên kết quả khảo sát và
+                  giá thị trường cập nhật mới nhất, chúng tôi sẽ đưa ra báo giá
+                  chi tiết, minh bạch và cam kết mức giá tốt nhất.
+                </p>
+              </div>
             </div>
-            <div class="process-item">
-              <div class="step-number">3</div>
-              <h3>Thu Gom & Vận Chuyển</h3>
-              <p>
-                Sau khi hai bên đã thống nhất giá cả, đội xe và nhân viên bốc
-                xếp chuyên nghiệp của chúng tôi sẽ tiến hành thu gom, cân đo và
-                vận chuyển hàng hóa một cách nhanh gọn, an toàn và sạch sẽ, trả
-                lại mặt bằng cho quý khách.
-              </p>
+
+            <div class="process-step left">
+              <div class="process-content">
+                <div class="step-number">Bước 3</div>
+                <h3>Ký Kết Hợp Đồng Giao Dịch</h3>
+                <p>
+                  Sau khi Quý khách đồng ý với mức giá đề xuất, hai bên sẽ tiến
+                  hành ký kết hợp đồng thu mua. Hợp đồng sẽ ghi rõ các điều
+                  khoản về giá cả, khối lượng, thời gian, phương thức thanh toán
+                  và trách nhiệm của mỗi bên, đảm bảo tính pháp lý và sự an tâm
+                  tuyệt đối cho khách hàng.
+                </p>
+              </div>
             </div>
-            <div class="process-item">
-              <div class="step-number">4</div>
-              <h3>Thanh Toán Nhanh Gọn</h3>
-              <p>
-                Ngay sau khi quá trình bốc xếp và cân đo hoàn tất, chúng tôi sẽ
-                tiến hành thanh toán 100% giá trị đơn hàng ngay tại chỗ bằng
-                tiền mặt hoặc chuyển khoản theo yêu cầu của quý khách.
-              </p>
+
+            <div class="process-step right">
+              <div class="process-content">
+                <div class="step-number">Bước 4</div>
+                <h3>Thu Gom & Vận Chuyển</h3>
+                <p>
+                  Đội ngũ bốc xếp chuyên nghiệp cùng hệ thống xe cẩu, xe tải
+                  chuyên dụng của chúng tôi sẽ nhanh chóng tiến hành tháo dỡ,
+                  thu gom và bốc xếp hàng hóa lên xe. Quá trình này được thực
+                  hiện an toàn, khoa học, đảm bảo không làm ảnh hưởng đến hoạt
+                  động và tài sản xung quanh của Quý khách.
+                </p>
+              </div>
+            </div>
+
+            <div class="process-step left">
+              <div class="process-content">
+                <div class="step-number">Bước 5</div>
+                <h3>Nghiệm Thu & Thanh Toán Ngay</h3>
+                <p>
+                  Ngay sau khi toàn bộ vật tư, phế liệu được chất lên xe, chúng
+                  tôi sẽ tiến hành nghiệm thu và thanh toán 100% giá trị hợp
+                  đồng ngay lập tức. Quý khách có thể lựa chọn nhận tiền mặt
+                  hoặc chuyển khoản. Chúng tôi cũng sẽ dọn dẹp sạch sẽ kho bãi,
+                  trả lại mặt bằng gọn gàng cho Quý khách.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section>
+      <section style="background: var(--bg-grey)">
         <div class="container" style="text-align: center">
           <h2 class="section-title" style="font-size: 2rem">
-            Sẵn Sàng Thanh Lý Vật Tư Của Bạn?
+            Sẵn Sàng Bắt Đầu Quy Trình?
           </h2>
-          <p style="max-width: 700px; margin: 0 auto 30px">
+          <p style="max-width: 700px; margin: -15px auto 30px">
             Chỉ cần một cuộc gọi, đội ngũ của chúng tôi sẽ có mặt để hỗ trợ bạn.
             Hãy để Đức Minh giúp bạn biến những vật tư tồn kho thành tiền mặt
-            một cách nhanh chóng!
+            một cách chuyên nghiệp và hiệu quả!
           </p>
-          <a href="lien-he.html" class="btn">Liên Hệ Ngay</a>
+          <a href="lien-he.html" class="btn">Liên Hệ Ngay Hôm Nay</a>
         </div>
       </section>
     </main>
@@ -554,18 +690,19 @@
           </div>
           <div class="footer-col">
             <h4>Thông Tin Liên Hệ</h4>
-            <p>
-              <strong>Địa chỉ:</strong> 14 ấp 2, Đông Thạnh, Hóc Môn, Thành phố
-              Hồ Chí Minh
-            </p>
-            <p>
-              <strong>Hotline:</strong>
-              <a href="tel:0936350118">0936.350.118</a>
-            </p>
-            <p>
-              <strong>Email:</strong>
-              <a href="mailto:info@tenmien.com">info@tenmien.com</a>
-            </p>
+            <ul>
+              <li>
+                <strong>Địa chỉ:</strong> 14 ấp 2, Đông Thạnh, Hóc Môn, TP. HCM
+              </li>
+              <li>
+                <strong>Hotline:</strong>
+                <a href="tel:0936350118">0936.350.118</a>
+              </li>
+              <li>
+                <strong>Email:</strong>
+                <a href="mailto:quibinh0118@gmail.com">quibinh0118@gmail.com</a>
+              </li>
+            </ul>
           </div>
           <div class="footer-col">
             <h4>Dịch Vụ Chính</h4>
@@ -598,19 +735,28 @@
     </footer>
 
     <script>
-      const menuIcon = document.getElementById("menu-icon"),
-        navLinks = document.getElementById("nav-links");
-      menuIcon &&
+      // === SCRIPT CHO MENU MOBILE ===
+      const menuIcon = document.getElementById("menu-icon");
+      const navLinks = document.getElementById("nav-links");
+      if (menuIcon) {
         menuIcon.addEventListener("click", () => {
           navLinks.classList.toggle("active");
         });
+      }
+
+      // === SCRIPT LÀM NỔI BẬT MENU ===
       document.addEventListener("DOMContentLoaded", () => {
-        const e = window.location.pathname.split("/").pop() || "index.html",
-          t = document.querySelectorAll("#nav-links a");
-        t.forEach((c) => {
-          c.getAttribute("href") === e
-            ? c.classList.add("active")
-            : c.classList.remove("active");
+        const currentPage =
+          window.location.pathname.split("/").pop() || "index.html";
+        const navLinksList = document.querySelectorAll("#nav-links a");
+
+        navLinksList.forEach((link) => {
+          const linkPage = link.getAttribute("href");
+          if (linkPage === currentPage) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
         });
       });
     </script>

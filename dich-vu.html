@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Các Dịch Vụ Thu Mua Chuyên Nghiệp - Công Ty Thu Mua Phế Liệu Đức Minh
-    </title>
+    <title>Dịch Vụ Thu Mua Vật Tư & Phế Liệu Giá Cao - Công Ty Đức Minh</title>
     <meta
       name="description"
       content="Công ty Đức Minh cung cấp dịch vụ thu mua chuyên nghiệp: Vật tư năng lượng mặt trời, cáp đồng, thiết bị điện, phế liệu sắt, thép, nhôm, inox và thanh lý nhà xưởng giá cao."
@@ -18,7 +16,7 @@
 
     <meta
       property="og:title"
-      content="Các Dịch Vụ Thu Mua Chuyên Nghiệp - Công Ty Thu Mua Phế Liệu Đức Minh"
+      content="Dịch Vụ Thu Mua Vật Tư & Phế Liệu Giá Cao - Công Ty Đức Minh"
     />
     <meta
       property="og:description"
@@ -38,6 +36,7 @@
       type="image/x-icon"
     />
     <style>
+      /* === CÀI ĐẶT CHUNG & BIẾN MÀU === */
       :root {
         --primary-color: #e90b0b;
         --secondary-color: #ff8c00;
@@ -49,14 +48,17 @@
         --bg-grey: #f4f4f4;
         --border-color: #ddd;
       }
+
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
+
       html {
         scroll-behavior: smooth;
       }
+
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           "Helvetica Neue", Arial, sans-serif;
@@ -64,14 +66,17 @@
         color: var(--text-dark);
         background-color: var(--bg-light);
       }
+
       .container {
         max-width: 1200px;
         margin: auto;
         padding: 0 15px;
       }
+
       section {
         padding: 60px 0;
       }
+
       .section-title {
         text-align: center;
         font-size: 2.5rem;
@@ -79,21 +84,30 @@
         color: var(--primary-color);
         text-transform: uppercase;
       }
+
       .section-subtitle {
         text-align: center;
         font-size: 1rem;
         color: #666;
         margin-top: -15px;
         margin-bottom: 40px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
       }
+
       img {
         max-width: 100%;
         height: auto;
         display: block;
+        border-radius: 8px;
       }
+
       a {
         text-decoration: none;
       }
+
+      /* === TOP BAR === */
       .top-bar {
         background: var(--primary-color);
         color: var(--text-light);
@@ -104,10 +118,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
       }
       .top-bar a {
         color: var(--text-light);
       }
+
+      /* === HEADER & NAVBAR === */
       .navbar {
         background: var(--bg-light);
         position: sticky;
@@ -150,8 +167,6 @@
         display: flex; /* Dùng Flexbox để xếp các item trên một hàng */
         align-items: center; /* Căn giữa các item theo chiều dọc */
         gap: 12px; /* Tạo khoảng cách giữa logo và chữ */
-
-        /* Xoá các thuộc tính cũ nếu có để tránh xung đột */
         font-size: initial;
         font-weight: initial;
       }
@@ -168,22 +183,6 @@
         line-height: 1; /* Đảm bảo chữ không quá cao */
       }
 
-      /* === RESPONSIVE CHO LOGO TRÊN DI ĐỘNG === */
-      @media (max-width: 768px) {
-        .navbar .logo .logo-icon {
-          height: 65px; /* Cho logo nhỏ lại một chút */
-        }
-        .navbar .logo .logo-text {
-          font-size: 1.3rem; /* Cho chữ nhỏ lại một chút */
-        }
-      }
-
-      /* Tùy chọn: Ẩn chữ trên màn hình rất nhỏ để tiết kiệm không gian */
-      @media (max-width: 480px) {
-        .navbar .logo .logo-text {
-          display: none;
-        }
-      }
       .menu-icon {
         display: none;
         cursor: pointer;
@@ -194,6 +193,7 @@
         background-color: var(--text-dark);
         margin: 6px 0;
       }
+
       .btn {
         background: var(--secondary-color);
         color: var(--text-light);
@@ -208,14 +208,12 @@
         background-color: #e67e22;
         transform: scale(1.05);
       }
+
+      /* === DANH MỤC DỊCH VỤ === */
       .machines-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 25px;
-      }
-      .machine-item a {
-        display: block;
-        color: var(--text-dark);
       }
       .machine-item {
         border: 1px solid var(--border-color);
@@ -235,24 +233,13 @@
         object-fit: cover;
       }
       .machine-item .caption {
-        padding: 15px;
-        display: flex;
-        align-items: center;
-        font-weight: 500;
-        font-size: 1.1rem;
-      }
-      .machine-item .caption .check-icon {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 22px;
-        height: 22px;
-        background-color: #dff0d8;
-        color: #3c763d;
-        border-radius: 50%;
-        margin-right: 10px;
+        padding: 20px;
         font-weight: 700;
+        font-size: 1.1rem;
+        text-align: center;
       }
+
+      /* === FOOTER === */
       .footer {
         background: #222;
         color: #ccc;
@@ -262,7 +249,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 40px;
-        padding-bottom: 80px;
+        padding-bottom: 40px;
       }
       .footer-col h4 {
         font-size: 1.2rem;
@@ -273,6 +260,10 @@
       .footer-col p,
       .footer-col li {
         margin-bottom: 10px;
+      }
+      .footer-col ul {
+        list-style: none;
+        padding: 0;
       }
       .footer-col a {
         color: #ccc;
@@ -285,13 +276,8 @@
         border-radius: 8px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         overflow: hidden;
-        height: 100%;
+        height: 92%;
         min-height: 220px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .footer-col .map-container:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
       }
       .footer-col .map-container iframe {
         width: 100%;
@@ -303,6 +289,8 @@
         padding: 20px 0;
         border-top: 1px solid #444;
       }
+
+      /* === NÚT GỌI & ZALO NỔI === */
       .floating-buttons {
         position: fixed;
         bottom: 20px;
@@ -337,7 +325,12 @@
       .zalo-float {
         background-color: var(--zalo-color);
       }
+
+      /* === RESPONSIVE DESIGN === */
       @media (max-width: 992px) {
+        .navbar .logo .logo-text {
+          font-size: 1.5rem;
+        }
         .navbar .nav-links li {
           margin-left: 10px;
         }
@@ -345,6 +338,7 @@
           font-size: 0.75rem;
         }
       }
+
       @media (max-width: 768px) {
         section {
           padding: 40px 0;
@@ -353,10 +347,21 @@
           font-size: 2rem;
         }
         .top-bar {
-          display: none;
+          font-size: 0.8rem;
+        }
+        .top-bar .container {
+          justify-content: center;
+          text-align: center;
+          gap: 5px;
         }
         .navbar .container {
           position: relative;
+        }
+        .navbar .logo .logo-icon {
+          height: 65px;
+        }
+        .navbar .logo .logo-text {
+          font-size: 1.3rem;
         }
         .menu-icon {
           display: block;
@@ -391,6 +396,11 @@
           font-size: 0.9rem;
         }
       }
+      @media (max-width: 480px) {
+        .navbar .logo .logo-text {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -410,8 +420,6 @@
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
           y="0px"
-          width="96"
-          height="96"
           viewBox="0 0 48 48"
         >
           <path
@@ -437,9 +445,8 @@
           <path
             fill="#2962ff"
             d="M21.25,18h-8v1.5h5.321L13,26h0.026c-0.163,0.211-0.276,0.463-0.276,0.75V27h7.5 c0.276,0,0.5-0.224,0.5-0.5v-1h-5.321L21,19h-0.026c0.163-0.211,0.276-0.463,0.276-0.75V18z"
-          ></path>
-        </svg>
-      </a>
+          ></path></svg
+      ></a>
     </div>
 
     <div class="top-bar">
@@ -485,171 +492,153 @@
     </header>
 
     <main>
-      <section id="service-hero">
+      <section
+        id="page-title"
+        style="
+          background: var(--bg-grey);
+          padding-top: 60px;
+          padding-bottom: 40px;
+        "
+      >
         <div class="container">
-          <h1 class="section-title">Tất Cả Dịch Vụ Của Chúng Tôi</h1>
+          <h1 class="section-title">Dịch Vụ Thu Mua Chuyên Nghiệp</h1>
           <p class="section-subtitle">
-            Đức Minh chuyên thu mua đa dạng các loại vật tư, thiết bị và phế
-            liệu giá cao trên toàn quốc.
+            Đức Minh cung cấp giải pháp thu mua toàn diện cho mọi loại vật tư
+            công nghiệp, phế liệu dự án và thiết bị tồn kho với cam kết giá cao
+            và quy trình nhanh chóng.
           </p>
         </div>
       </section>
 
-      <section id="solar-purchase">
+      <section id="categories">
         <div class="container">
-          <h2 class="section-title">Thu Mua Vật Tư Năng Lượng Mặt Trời</h2>
+          <h2 class="section-title">THU MUA VẬT TƯ NĂNG LƯỢNG MẶT TRỜI</h2>
+          <p class="section-subtitle">
+            Chúng tôi chuyên thu hồi các thiết bị và vật tư từ các dự án điện
+            mặt trời, từ tấm pin, inverter cho đến hệ thống khung giàn, giúp bạn
+            giải phóng mặt bằng và thu hồi vốn hiệu quả.
+          </p>
           <div class="machines-grid">
             <div class="machine-item">
-              <a href="#">
-                <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4QgvIAdU37dvgPVErUskvsxWk1IrZLxQdb1mzal0KvJO77u9GmMsY349mogX-OrJTqKKoC-xojtcGjowAlhANxtAkTbAAUYv27q7deaAdkF3yG6mrbM52AWYnjvMYDxIUXE3XhhaVSmmPoQXt2t3zobhPaai6wiqtObDBFw3FtxDU4YQDBLqhUIGqajU/s16000/14.png"
-                  alt="Thu mua pin năng lượng mặt trời"
-                />
-                <div class="caption">
-                  <span class="check-icon">✓</span
-                  ><span>Pin Năng Lượng Mặt Trời</span>
-                </div>
-              </a>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOQotrv1sAvuLkZevZKv-BkooS_m_4tEyWfWfof9tq5He4S0LQ-JcmHT-fPCI6sR6aPk90QeQbuj0he-Vvpp9BQm3klHVBNRJyts8huBY9dLQbHpTajFIqWHj3CqVxl1eNO81cLvqzZ1kzM19PuZrP8QMzZIU5rLfyX6sUly7mmjEX-O_8BfujR2fmSxk/s16000/pin%20na%CC%86ng%20lu%CC%9Bo%CC%9B%CC%A3ng%20ma%CC%A3%CC%86t%20tro%CC%9B%CC%80i.png"
+                alt="Thu mua pin năng lượng mặt trời"
+              />
+              <div class="caption">
+                <span>Pin Năng Lượng Mặt Trời</span>
+              </div>
             </div>
             <div class="machine-item">
-              <a href="#">
-                <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGF3-dRDY88qQ8YB1J5642sYR4uEcknji-Sdy0zyyysl025KScAMJZoxOcveFxFYoEZxbVwdpTuzXODWIkRFln3NGxBqLDOZtoWsuA38JTknN4m59sTEjV-MffdRHnozV_-5w1ZNILYy1qVoqTUbKcX3voHJrbwMGKuodZcCrrk1G14yi5S8gbLto4VWQ/s16000/19.png"
-                  alt="Thu mua Inverter, biến tần"
-                />
-                <div class="caption">
-                  <span class="check-icon">✓</span
-                  ><span>Inverter (Biến Tần)</span>
-                </div>
-              </a>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbImRRf4ZUNC-ELD5Zr_FlX__xQW3A8hWODfMjg52cunrNNmXLiVu0sfRmut_TRFvj0bTX39cy1XLEHikCct23QQ54Gl8C55C6OzDJ5LRe9-kkHyEaua8I_nTEma1mVqxSsIQP2bF4ZyqASvD4fvUeQ12ol4GFAq74Yme7Jl_c89wISh-mgt_TPGq-pK8/s16000/27.png"
+                alt="Phế Liệu Công Trình NLMT"
+              />
+              <div class="caption">
+                <span>Phế Liệu Công Trình NLMT</span>
+              </div>
             </div>
             <div class="machine-item">
-              <a href="#">
-                <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsQ3BUIV8XFXlRqPUyD6eV7c6Nng0S2jZ6nSFOJ92svHKDuZOuBa053ZaDR7arQDR_L9SIft7jcMsOhEeIWMNn6jO1i0aZRhWqueX3fuj9cbCTgHxV7fCla1Cg0cdyaIdzhm-Hvj5dMDZg4EyPF_i3xntaOvqumBzy2HdIdB7X6prQkyyMROWdcg80Ffs/s16000/22.png"
-                  alt="Thu mua dây điện DC Solar"
-                />
-                <div class="caption">
-                  <span class="check-icon">✓</span
-                  ><span>Dây Điện DC Solar</span>
-                </div>
-              </a>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCpL2DcgVI9Kx9hhwxQGn83QbiR0OS_oenVwsxKdLxqEu1zSa2KxkK8OYQMw12AGO4k8DSwv22KgtEXaTrD-zNb8lja3swGVL6RHF3_9w7LppjvBTqklVKbtPIXrW-W6zUY5AIrfJywoSViEjf6yq53JZ3uzafdQl7UEt0XkphG2MGZRkDLplP8R-edsc/s16000/Da%CC%82y%20%C4%90ie%CC%A3%CC%82n%20DC%20Solar.png"
+                alt="Thu mua dây điện DC Solar"
+              />
+              <div class="caption">
+                <span>Dây Điện DC Solar</span>
+              </div>
             </div>
             <div class="machine-item">
-              <a href="#">
-                <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid3Gh8HF62WYT2tdutVxZYL4GULfs5YL-VmpSGMdFSTE3pE910cEkKPSwvfJZyM-84j9esjdR94s5NXZ6FWBm5CUgSEtK-0VxEE3_NZ804ICcTXStwg1b5UTEduvTW8UW0DKo4FDM2pSO_oHOAAgidQ2bkUpx47IZ0b6gMHiZSLmMQ-jdiyUBa2klGEbI/s16000/28.png"
-                  alt="Thu mua tủ điện, phụ kiện solar"
-                />
-                <div class="caption">
-                  <span class="check-icon">✓</span
-                  ><span>Tủ Điện & Phụ Kiện</span>
-                </div>
-              </a>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid3Gh8HF62WYT2tdutVxZYL4GULfs5YL-VmpSGMdFSTE3pE910cEkKPSwvfJZyM-84j9esjdR94s5NXZ6FWBm5CUgSEtK-0VxEE3_NZ804ICcTXStwg1b5UTEduvTW8UW0DKo4FDM2pSO_oHOAAgidQ2bkUpx47IZ0b6gMHiZSLmMQ-jdiyUBa2klGEbI/s16000/28.png"
+                alt="Thu mua tủ điện, phụ kiện solar"
+              />
+              <div class="caption">
+                <span>Tủ Điện & Phụ Kiện</span>
+              </div>
             </div>
             <div class="machine-item">
-              <a href="#">
-                <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhszh7H62wghjHhyphenhyphenKhL5BisJ_LGKxSfHJDFCOFa6h01chPAOZkM5TI249HZ_tgIVH8rK-ppxcXnYKiVjuik-ZeaaSuNJEfg1kiZ3jXtyWnMoxWE0v7sFGXQfcRL1R8Ds_Juu4S2aTiI9zIy1vwG3_wQGFO1pdVpkq_o-DpKT8flMKy7toPVNtCGaxX9aa0/s16000/26.png"
-                  alt="Thu mua khung giàn, kẹp pin"
-                />
-                <div class="caption">
-                  <span class="check-icon">✓</span
-                  ><span>Khung Giàn, Kẹp Pin</span>
-                </div>
-              </a>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhszh7H62wghjHhyphenhyphenKhL5BisJ_LGKxSfHJDFCOFa6h01chPAOZkM5TI249HZ_tgIVH8rK-ppxcXnYKiVjuik-ZeaaSuNJEfg1kiZ3jXtyWnMoxWE0v7sFGXQfcRL1R8Ds_Juu4S2aTiI9zIy1vwG3_wQGFO1pdVpkq_o-DpKT8flMKy7toPVNtCGaxX9aa0/s16000/26.png"
+                alt="Thu mua khung giàn, kẹp pin"
+              />
+              <div class="caption">
+                <span>Khung Giàn, Kẹp Pin</span>
+              </div>
             </div>
             <div class="machine-item">
-              <a href="#">
-                <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipy0j5XO0LD50CUpLgkDXlZtCajcIhe43y181f5RcNx2RFy2TY7ZTDmXup6ntSt9Dw1tGDFgg7uQ9LMZn5cZBBT1wdL9JN5ykE1GgXQk5ie6NPFeqc-vn_44LmLSCIf4T6YWFQNSaSGXxrGrU25F9Q0_YT7gKqhTeIAwtXdH6wwn_v2QUCJB9bFSz0B_w/s16000/25.png"
-                  alt="Thu mua vật tư điện mặt trời khác"
-                />
-                <div class="caption">
-                  <span class="check-icon">✓</span
-                  ><span>Các Vật Tư Tồn Kho Khác</span>
-                </div>
-              </a>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipy0j5XO0LD50CUpLgkDXlZtCajcIhe43y181f5RcNx2RFy2TY7ZTDmXup6ntSt9Dw1tGDFgg7uQ9LMZn5cZBBT1wdL9JN5ykE1GgXQk5ie6NPFeqc-vn_44LmLSCIf4T6YWFQNSaSGXxrGrU25F9Q0_YT7gKqhTeIAwtXdH6wwn_v2QUCJB9bFSz0B_w/s16000/25.png"
+                alt="Thu mua vật tư điện mặt trời khác"
+              />
+              <div class="caption">
+                <span>Các Vật Tư Tồn Kho Khác</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="electrical-purchase" style="background: var(--bg-grey)">
+      <section id="other-scrap" style="background: var(--bg-grey)">
         <div class="container">
-          <h2 class="section-title">Thu Mua Cáp Đồng & Thiết Bị Điện</h2>
+          <h2 class="section-title">THU MUA CÁP ĐỒNG & THIẾT BỊ ĐIỆN</h2>
+          <p class="section-subtitle">
+            Thu mua tất cả các loại cáp điện, dây dẫn, thiết bị đóng cắt, mô tơ
+            và máy móc công nghiệp đã qua sử dụng hoặc tồn kho từ các công trình
+            và nhà xưởng.
+          </p>
           <div class="machines-grid">
             <div class="machine-item">
-              <a href="#">
-                <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7lY0Ni1ggt_VLJca_RXMHF0hFGw24N25hRGd_Vy_g1ZBXUS3mVRbG3DbkcLavEFKWcF9jyEfeeYJK6QDU_nDBrUq0UF2C3DafSDNAYupMuP-W5dOfVRIaamHjKi7HlTTQbMRCxIoC9ufAWcf4Nec11jyiHnD0TF2x7P0dgB3XQRteB_eLQ7fmtz4Qn3o/s16000/9.png"
-                  alt="Thu mua cáp đồng, cáp nhôm"
-                />
-                <div class="caption">
-                  <span class="check-icon">✓</span
-                  ><span>Cáp Đồng, Cáp Nhôm</span>
-                </div>
-              </a>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4QgvIAdU37dvgPVErUskvsxWk1IrZLxQdb1mzal0KvJO77u9GmMsY349mogX-OrJTqKKoC-xojtcGjowAlhANxtAkTbAAUYv27q7deaAdkF3yG6mrbM52AWYnjvMYDxIUXE3XhhaVSmmPoQXt2t3zobhPaai6wiqtObDBFw3FtxDU4YQDBLqhUIGqajU/s16000/14.png"
+                alt="Thu Mua Cáp Điện & Dây Dẫn Các Loại"
+              />
+              <div class="caption">
+                <span>Thu Mua Cáp Điện & Dây Dẫn Các Loại</span>
+              </div>
             </div>
             <div class="machine-item">
-              <a href="#">
-                <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtoCL2P8HaEOkeuXXyYNokbjGKk_oD-DsqmVmbt5snV-KlQq33Ths3reud2DuzqpDqfEE6jQbl7j4vIS9uwWdgEH3RpDOFBQnhd6qpglPKKi55-bvur_9t8d2zM8cyHAmNJWvLn9MwwQEi6_Ue-9HaHDhIJKcmK_yHh6oZGcK7e0kMLgARN4_yoXZxue4/s16000/nlmt.png"
-                  alt="Thu mua mô tơ, thiết bị điện 3 pha"
-                />
-                <div class="caption">
-                  <span class="check-icon">✓</span
-                  ><span>Mô Tơ & Thiết Bị 3 Pha</span>
-                </div>
-              </a>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirVJmo0FDO8pu9byLk5bB6uOx9ZQXqhg4YfBm95gd34FdlcfAYy-Jg-_3LVWUnmcU0UBYjTdth-pnUMlXKqn11ExOnSKPkYTujrLzEAMB_VLBVFdFijFeQw9kErFoW5JF94xr4VhOowrFg3MLbsFbsh06VYEMUkZdkVRKL6nlwiesrkQeGZXla39dXwk8/s16000/17.png"
+                alt="Thu Mua Tủ Điện & Thiết Bị Đóng Cắt"
+              />
+              <div class="caption">
+                <span>Thu Mua Tủ Điện & Thiết Bị Đóng Cắt</span>
+              </div>
             </div>
             <div class="machine-item">
-              <a href="#">
-                <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAHL3mWJxqSLuDrKV8kH1eRfKLee3MjAS8SNDYc0w_-rwZtLec4hz52USy-wqpzd-m9p6u9U1OBCItnhlyo6NzKVjKb_PkDElSZjHVMX40rrmr6dXbeGDmHMd6v15SawyLWimv531Neq_xdtMR7GsEiBauaV5Ub2cTjMvT2qB6Xz-mMg5ylaG-0N5zRqM/s16000/11.png"
-                  alt="Thu mua tủ điện, CB, Aptomat"
-                />
-                <div class="caption">
-                  <span class="check-icon">✓</span
-                  ><span>Tủ Điện, CB, Aptomat</span>
-                </div>
-              </a>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJNBTcGlKGuzkfKoEo25yeO5NDxZFD6nLSJhkDtEhU7zmsgvq3mnVwJTM9qF9f1Mbq6d3BJDkCvDRzQBmstR-9YYlWGeIEffpprMZJVGKx47WsrjV8F6F572R9Oh6tl6HDEoKK4imTFMBFM8j7pn1EsohA66NyOvBGlnVafJ16WRhNC0tjaNL-hFULro/s16000/Thie%CC%82%CC%81t_ke%CC%82%CC%81_chu%CC%9Ba_co%CC%81_te%CC%82n%20(3).png"
+                alt="Thu Mua Động Cơ Điện (Mô Tơ) & Máy Biến Áp"
+              />
+              <div class="caption">
+                <span>Thu Mua Động Cơ Điện (Mô Tơ) & Máy Biến Áp</span>
+              </div>
             </div>
             <div class="machine-item">
-              <a href="#">
-                <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOpRsoGutaRvMqdkyzi0ghEjUCilO1gp0K7VgdTx3sgnRnjBnjOcBYtBstwLI7MwsTxV62E42sZxe1kiraFEpbrWK1z-YYlh-vOlbfuxvH5y10-Z5hD-uqTlU5koZo13Z8zAOuUyaSieZK5pGq4QDVbXXiza4_NidMILk4FYzy7hIHTG8sHifTxvmQyY4/s16000/12.png"
-                  alt="Thanh lý máy móc công nghiệp"
-                />
-                <div class="caption">
-                  <span class="check-icon">✓</span
-                  ><span>Máy Móc Công Nghiệp Cũ</span>
-                </div>
-              </a>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEik-plexKW7aVbvUOURnmmGOHZwycQV5_MNwyExgOzEowy_2OYXf578JgQJzBaoz9clfAj1in1_e50SXChrRqU4qSotcwsiyvQv4zIaTjN7cVxBfE8Sn9hfttZfFzyg4rnBboumFE7t_NknH3Vpp07fWxVTSBPVVBEOAkU-tAvMqvgvB30Us_WeZr_vuUY/s16000/20.png"
+                alt="Thu Mua Vật Tư & Linh Kiện Điện Công Nghiệp"
+              />
+              <div class="caption">
+                <span>Thu Mua Vật Tư & Linh Kiện Điện Công Nghiệp</span>
+              </div>
             </div>
             <div class="machine-item">
-              <a href="#">
-                <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_PnoL69Wx98qPQrZ2h9TQVAjYZgsg3U6Jcms-W33QCliurGSEgrngmvYajWco3DOwd5Cq5PElVUpxVJDak79KYw0XoLXjd32m73A3GjLSyfw24HEpSDRu5MwdRvRTdqVamtxsjoo58AoseTUN3co13z1lJ_c8gEHEvS3Q3yPvKL2WVolsf_747meco6o/s16000/8.png"
-                  alt="Thu mua linh kiện điện tử"
-                />
-                <div class="caption">
-                  <span class="check-icon">✓</span
-                  ><span>Linh Kiện Điện Tử</span>
-                </div>
-              </a>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGF3-dRDY88qQ8YB1J5642sYR4uEcknji-Sdy0zyyysl025KScAMJZoxOcveFxFYoEZxbVwdpTuzXODWIkRFln3NGxBqLDOZtoWsuA38JTknN4m59sTEjV-MffdRHnozV_-5w1ZNILYy1qVoqTUbKcX3voHJrbwMGKuodZcCrrk1G14yi5S8gbLto4VWQ/s16000/19.png"
+                alt="Thu Mua Máy Móc, Dây Chuyền Công Nghiệp Cũ"
+              />
+              <div class="caption">
+                <span>Thu Mua Máy Móc, Dây Chuyền Công Nghiệp Cũ</span>
+              </div>
             </div>
             <div class="machine-item">
-              <a href="#">
-                <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhl_W589RbOc-vf01YIq64_6mWkmTwfTOaebCveAf3ng4FcEwVvgmPptIoReRAi7v5w7WF1QmfeoTUherrWVL-0LsJnIgJQy7hd2X_LpRS_5Fqp1wtzepW7FyY_mHoOy-5X3IWDp5YzYNISHHfx4RCSlZyrWMzu0klD34Uw41jeWY41ZphCtgnXX20jO0s/s16000/Thie%CC%82%CC%81t_ke%CC%82%CC%81_chu%CC%9Ba_co%CC%81_te%CC%82n%20(2).png"
-                  alt="Thanh lý nhà xưởng, công trình"
-                />
-                <div class="caption">
-                  <span class="check-icon">✓</span
-                  ><span>Thanh Lý Nhà Xưởng</span>
-                </div>
-              </a>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8kH04qhIyIC_Lr0EFAnHF8pygbiyCs3BX0SkdPrszeEGdkukoaf-0DhkNHL3oeW-V1HVgCvLyWLq5Q2pNmGxaDF84gTOtUqO-mDfKbDuH-koCG7vfmCk-2NYnVSRI6G7cfCZAGN30OCLLJNb9wEib5sQmmXNVQzwUp6-49pNDc9PAfX6HDCIVgS_SGrQ/s16000/Thie%CC%82%CC%81t_ke%CC%82%CC%81_chu%CC%9Ba_co%CC%81_te%CC%82n%20(4).png"
+                alt="Thanh Lý Hệ Thống Điện & Phế Liệu Nhà Xưởng"
+              />
+              <div class="caption">
+                <span>Thanh Lý Hệ Thống Điện & Phế Liệu Nhà Xưởng</span>
+              </div>
             </div>
           </div>
         </div>
@@ -657,81 +646,66 @@
 
       <section id="metal-scrap">
         <div class="container">
-          <h2 class="section-title">
-            Thu Mua Phế Liệu Đồng Sắt Thép Nhôm Inox
-          </h2>
+          <h2 class="section-title">THU MUA PHẾ LIỆU CÔNG NGHIỆP</h2>
+          <p class="section-subtitle">
+            Là đối tác tin cậy trong việc thu mua các loại phế liệu kim loại phổ
+            biến như đồng, sắt, nhôm, inox với số lượng lớn, đảm bảo giá cạnh
+            tranh nhất.
+          </p>
           <div class="machines-grid">
             <div class="machine-item">
-              <a href="#">
-                <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4QgvIAdU37dvgPVErUskvsxWk1IrZLxQdb1mzal0KvJO77u9GmMsY349mogX-OrJTqKKoC-xojtcGjowAlhANxtAkTbAAUYv27q7deaAdkF3yG6mrbM52AWYnjvMYDxIUXE3XhhaVSmmPoQXt2t3zobhPaai6wiqtObDBFw3FtxDU4YQDBLqhUIGqajU/s16000/14.png"
-                  alt="Thu Mua Phế Liệu Đồng"
-                />
-                <div class="caption">
-                  <span class="check-icon">✓</span
-                  ><span>Phế Liệu Đồng (Cáp, Đỏ, Vàng)</span>
-                </div>
-              </a>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEE6XYvWmJphQR17Qj8FCWujBVNtwOUxIohGiVHId_aMDTaYViwt93cnL6XCU7lDIb1qjEj84zEHvxvQfvMqlHXLo9HULBzDUUrEI6rREaYIaXEgS8HkQBlSswe9zRYblcg_BexGG7MPQTT0-CMJ3q4XOfPJcAGixLw_OMj1Hd-rtkN4ncjsypJ58v2pM/s16000/ca%CC%81p%20%C4%91o%CC%82%CC%80ng.png"
+                alt="Phế Liệu Đồng (Cáp, Đỏ, Vàng)"
+              />
+              <div class="caption">
+                <span>Phế Liệu Đồng (Cáp, Đỏ, Vàng)</span>
+              </div>
             </div>
             <div class="machine-item">
-              <a href="#">
-                <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGF3-dRDY88qQ8YB1J5642sYR4uEcknji-Sdy0zyyysl025KScAMJZoxOcveFxFYoEZxbVwdpTuzXODWIkRFln3NGxBqLDOZtoWsuA38JTknN4m59sTEjV-MffdRHnozV_-5w1ZNILYy1qVoqTUbKcX3voHJrbwMGKuodZcCrrk1G14yi5S8gbLto4VWQ/s16000/19.png"
-                  alt="Thu Mua Phế Liệu Sắt Thép"
-                />
-                <div class="caption">
-                  <span class="check-icon">✓</span
-                  ><span>Phế Liệu Sắt Thép Công Trình</span>
-                </div>
-              </a>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9sFKU5EyYoUTQLb5YZziIwDQ74ix3JiTingSfBwziv75qIjp3zwwV2D59u8ls1BK6n2T1m4xqGFl6HYv2tVTFJLVk5ceXdoRcvz2EQ_4PHpepA4pTV6Mg-KbzLcR12bGNvAhaG5oR-iBjlz6hBl5FOuH8afOV-Dxrp2HdZY2JyI9s8KrmmVJGFBF9Q3c/s16000/10.png"
+                alt="Phế Liệu Sắt Thép Công Trình"
+              />
+              <div class="caption">
+                <span>Phế Liệu Sắt Thép Công Trình</span>
+              </div>
             </div>
             <div class="machine-item">
-              <a href="#">
-                <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsQ3BUIV8XFXlRqPUyD6eV7c6Nng0S2jZ6nSFOJ92svHKDuZOuBa053ZaDR7arQDR_L9SIft7jcMsOhEeIWMNn6jO1i0aZRhWqueX3fuj9cbCTgHxV7fCla1Cg0cdyaIdzhm-Hvj5dMDZg4EyPF_i3xntaOvqumBzy2HdIdB7X6prQkyyMROWdcg80Ffs/s16000/22.png"
-                  alt="Thu Mua Phế Liệu Nhôm"
-                />
-                <div class="caption">
-                  <span class="check-icon">✓</span
-                  ><span>Phế Liệu Nhôm (Đặc, Dẻo, Hợp Kim)</span>
-                </div>
-              </a>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5n7TW_VvpGSa6MM4Mzu-XMcXgY06QUo8SBdxF-5xP3-VeECf_CH8OFmhlbGcvPMitAT2jcZiGKkRdbP6hro_jbbWLAjPhM3MF-HR4TzSlRbf65ADBYMtGZOH4-mvvHu6ombhOrFVr5EDi4rKhxOnyjYia9j8WIThuwqgXzZKylRH6A8opi55O5itX9Zs/s16000/6.png"
+                alt="Phế Liệu Nhôm (Đặc, Dẻo, Hợp Kim)"
+              />
+              <div class="caption">
+                <span>Phế Liệu Nhôm (Đặc, Dẻo, Hợp Kim)</span>
+              </div>
             </div>
             <div class="machine-item">
-              <a href="#">
-                <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid3Gh8HF62WYT2tdutVxZYL4GULfs5YL-VmpSGMdFSTE3pE910cEkKPSwvfJZyM-84j9esjdR94s5NXZ6FWBm5CUgSEtK-0VxEE3_NZ804ICcTXStwg1b5UTEduvTW8UW0DKo4FDM2pSO_oHOAAgidQ2bkUpx47IZ0b6gMHiZSLmMQ-jdiyUBa2klGEbI/s16000/28.png"
-                  alt="Thu Mua Phế Liệu Inox"
-                />
-                <div class="caption">
-                  <span class="check-icon">✓</span
-                  ><span>Phế Liệu Inox (304, 201, 430)</span>
-                </div>
-              </a>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB1rJ_GDvKOWoQnaI9pDzjfyDe_ZeLXDwpRV5yM4NQR8co7v3_ZZYmlyqnJtzZr7CPXsFI9ilFmIqDU3cWUzKz78V7bvHmyd_Ll9Ffbh7olDsBXKIqlcPYN9f9lbYNwmmp3DuIbP2hyphenhyphenTYy7FeYspRP6XbG6aMRWjt1RrdHl9lqe8TMWMVq8PnRjvENaic/s16000/7.png"
+                alt="Thu Mua Phế Liệu Inox"
+              />
+              <div class="caption">
+                <span>Phế Liệu Inox (304, 201, 430)</span>
+              </div>
             </div>
             <div class="machine-item">
-              <a href="#">
-                <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhszh7H62wghjHhyphenhyphenKhL5BisJ_LGKxSfHJDFCOFa6h01chPAOZkM5TI249HZ_tgIVH8rK-ppxcXnYKiVjuik-ZeaaSuNJEfg1kiZ3jXtyWnMoxWE0v7sFGXQfcRL1R8Ds_Juu4S2aTiI9zIy1vwG3_wQGFO1pdVpkq_o-DpKT8flMKy7toPVNtCGaxX9aa0/s16000/26.png"
-                  alt="Thu Mua Hợp Kim, Gang, Thiếc"
-                />
-                <div class="caption">
-                  <span class="check-icon">✓</span
-                  ><span>Hợp Kim, Gang, Thiếc</span>
-                </div>
-              </a>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj04RjxWVqyJsc6ohVGovG9PSf3f1zgnDnvgTtTY62aHWQfkBqtNSh6vcnZdz6aNMua30KMePOthf2DGpfu2u4Znr_vhgxLzwsU1OqSfR6XciO75MiX3zL0XDISqLUVzKyq6hFcZ-RPdGVYrFVDF2MAFZlChwra9mbJbRxbnuW2EKM67vvIfMRDLL5AW88/s16000/8.png"
+                alt="Thu Mua Hợp Kim, Gang, Thiếc"
+              />
+              <div class="caption">
+                <span>Hợp Kim, Gang, Thiếc</span>
+              </div>
             </div>
             <div class="machine-item">
-              <a href="#">
-                <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipy0j5XO0LD50CUpLgkDXlZtCajcIhe43y181f5RcNx2RFy2TY7ZTDmXup6ntSt9Dw1tGDFgg7uQ9LMZn5cZBBT1wdL9JN5ykE1GgXQk5ie6NPFeqc-vn_44LmLSCIf4T6YWFQNSaSGXxrGrU25F9Q0_YT7gKqhTeIAwtXdH6wwn_v2QUCJB9bFSz0B_w/s16000/25.png"
-                  alt="Thu mua phế liệu máy móc"
-                />
-                <div class="caption">
-                  <span class="check-icon">✓</span
-                  ><span>Phế Liệu Từ Máy Móc Cũ</span>
-                </div>
-              </a>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwImvIv3KoCFPwnmnik-B9rzCjP-kYLyQ2fcNKICxK2Xm-jM0mRz6V2bK2x7ysYDtDxz0O_35snyRpRWpFEP8xkki65RJFTMRB8eqBmZFxE3VcUQJioNyoteTMK3VMTptLih-06m0hhNa9LEqdmEXVt3ljnUfo0NtOAJRnPCCWw2DhhrInT__9V_roOFs/s16000/9.png"
+                alt="Thu mua phế liệu máy móc"
+              />
+              <div class="caption">
+                <span>Phế Liệu Từ Máy Móc Cũ</span>
+              </div>
             </div>
           </div>
         </div>
@@ -742,7 +716,7 @@
           <h2 class="section-title" style="font-size: 2rem">
             Không Tìm Thấy Vật Tư Của Bạn?
           </h2>
-          <p style="max-width: 700px; margin: 0 auto 30px">
+          <p style="max-width: 700px; margin: -15px auto 30px">
             Ngoài các danh mục trên, chúng tôi còn thu mua rất nhiều loại vật
             tư, thiết bị, phế liệu khác. Đừng ngần ngại, hãy liên hệ ngay với
             chúng tôi để được tư vấn và báo giá nhanh nhất!
@@ -765,18 +739,19 @@
           </div>
           <div class="footer-col">
             <h4>Thông Tin Liên Hệ</h4>
-            <p>
-              <strong>Địa chỉ:</strong> 14 ấp 2, Đông Thạnh, Hóc Môn, Thành phố
-              Hồ Chí Minh
-            </p>
-            <p>
-              <strong>Hotline:</strong>
-              <a href="tel:0936350118">0936.350.118</a>
-            </p>
-            <p>
-              <strong>Email:</strong>
-              <a href="mailto:info@tenmien.com">info@tenmien.com</a>
-            </p>
+            <ul>
+              <li>
+                <strong>Địa chỉ:</strong> 14 ấp 2, Đông Thạnh, Hóc Môn, TP. HCM
+              </li>
+              <li>
+                <strong>Hotline:</strong>
+                <a href="tel:0936350118">0936.350.118</a>
+              </li>
+              <li>
+                <strong>Email:</strong>
+                <a href="mailto:quibinh0118@gmail.com">quibinh0118@gmail.com</a>
+              </li>
+            </ul>
           </div>
           <div class="footer-col">
             <h4>Dịch Vụ Chính</h4>
@@ -809,19 +784,28 @@
     </footer>
 
     <script>
-      const menuIcon = document.getElementById("menu-icon"),
-        navLinks = document.getElementById("nav-links");
-      menuIcon &&
+      // === SCRIPT CHO MENU MOBILE ===
+      const menuIcon = document.getElementById("menu-icon");
+      const navLinks = document.getElementById("nav-links");
+      if (menuIcon) {
         menuIcon.addEventListener("click", () => {
           navLinks.classList.toggle("active");
         });
+      }
+
+      // === SCRIPT LÀM NỔI BẬT MENU ===
       document.addEventListener("DOMContentLoaded", () => {
-        const e = window.location.pathname.split("/").pop() || "index.html",
-          t = document.querySelectorAll("#nav-links a");
-        t.forEach((c) => {
-          c.getAttribute("href") === e
-            ? c.classList.add("active")
-            : c.classList.remove("active");
+        const currentPage =
+          window.location.pathname.split("/").pop() || "index.html";
+        const navLinksList = document.querySelectorAll("#nav-links a");
+
+        navLinksList.forEach((link) => {
+          const linkPage = link.getAttribute("href");
+          if (linkPage === currentPage) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
         });
       });
     </script>
